@@ -79,7 +79,6 @@ public class MainActivityPeer extends AppCompatActivity {
         surface_view = findViewById(R.id.surface_view);
         surface_view2 = findViewById(R.id.surface_view2);
     }
-
     private void RequestPermissions() {
         PermissionListener permissionlistener = new PermissionListener() {
             @Override
