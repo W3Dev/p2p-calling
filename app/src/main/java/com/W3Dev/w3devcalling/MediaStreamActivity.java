@@ -3,6 +3,7 @@ package com.W3Dev.w3devcalling;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import org.webrtc.Camera1Enumerator;
 import org.webrtc.Camera2Enumerator;
@@ -179,10 +180,10 @@ public class MediaStreamActivity extends AppCompatActivity {
 
     private void createVideoTrackFromCameraAndShowIt() {
         VideoCapturer videoCapturer = createVideoCapturer();
-        VideoSource videoSource = factory.createVideoSource(videoCapturer.isScreencast());
+        VideoSource videoSource = peerConnectionFactory.createVideoSource(videoCapturer.isScreencast());
         videoCapturer.startCapture(VIDEO_RESOLUTION_WIDTH, VIDEO_RESOLUTION_HEIGHT, FPS);
 
-        videoTrackFromCamera = factory.createVideoTrack(VIDEO_TRACK_ID, videoSource);
+        videoTrackFromCamera = peerConnectionFactory.createVideoTrack(VIDEO_TRACK_ID, videoSource);
         videoTrackFromCamera.setEnabled(true);
         videoTrackFromCamera.addSink(surface_view);
 
@@ -230,7 +231,6 @@ public class MediaStreamActivity extends AppCompatActivity {
         return Camera2Enumerator.isSupported(this);
     }
 
-/*
     private void startStreamingVideo() {
         MediaStream mediaStream = peerConnectionFactory.createLocalMediaStream("ARDAMS");
         mediaStream.addTrack(videoTrackFromCamera);
@@ -240,12 +240,20 @@ public class MediaStreamActivity extends AppCompatActivity {
         localPeerConnection.createOffer(new SimpleSdpObserver() {
             @Override
             public void onCreateSuccess(SessionDescription sessionDescription) {
-                super.onCreateSuccess(sessionDescription);
+                Log.d(TAG, "onCreateSuccess: ");
+                localPeerConnection.setLocalDescription(new SimpleSdpObserver(), sessionDescription);
+                remotePeerConnection.setRemoteDescription(new SimpleSdpObserver(), sessionDescription);
+
+                remotePeerConnection.createAnswer(new SimpleSdpObserver() {
+                    @Override
+                    public void onCreateSuccess(SessionDescription sessionDescription) {
+                        localPeerConnection.setRemoteDescription(new SimpleSdpObserver(), sessionDescription);
+                        remotePeerConnection.setLocalDescription(new SimpleSdpObserver(), sessionDescription);
+                    }
+                }, sdpMediaConstraints);
             }
-        });
-
-
-    }*/
+        }, sdpMediaConstraints);
+    }
 
 
 }

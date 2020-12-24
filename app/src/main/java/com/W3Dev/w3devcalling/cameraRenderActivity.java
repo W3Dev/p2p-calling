@@ -29,7 +29,6 @@ public class cameraRenderActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera_render);
-
         initialixeSurfaceView();
     }
 
@@ -68,6 +67,7 @@ public class cameraRenderActivity extends AppCompatActivity {
                 .setVideoEncoderFactory(defaultVideoEncoderFactory)
                 .setVideoDecoderFactory(defaultVideoDecoderFactory)
                 .createPeerConnectionFactory();
+
         createVideoTrackAndShowIt(peerConnectionFactory);
     }
 
