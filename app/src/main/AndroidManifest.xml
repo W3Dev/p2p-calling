@@ -24,16 +24,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.W3DevCalling">
-        <activity android:name=".LauncherActivity"></activity>
-        <activity android:name=".MediaStreamActivity" />
-        <activity android:name=".cameraRenderActivity" />
-        <activity android:name=".MainActivityPeer">
+        <activity android:name=".LauncherActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MediaStreamActivity" />
+        <activity android:name=".cameraRenderActivity" />
+        <activity android:name=".MainActivityPeer"></activity>
         <activity android:name=".MainActivity" />
     </application>
 
