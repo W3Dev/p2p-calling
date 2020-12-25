@@ -2,16 +2,19 @@ package com.W3Dev.w3devcalling;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.SurfaceView;
 
 import org.webrtc.Camera1Enumerator;
 import org.webrtc.Camera2Enumerator;
 import org.webrtc.CameraEnumerator;
+import org.webrtc.CapturerObserver;
 import org.webrtc.DefaultVideoDecoderFactory;
 import org.webrtc.DefaultVideoEncoderFactory;
 import org.webrtc.EglBase;
 import org.webrtc.PeerConnectionFactory;
+import org.webrtc.SurfaceTextureHelper;
 import org.webrtc.SurfaceViewRenderer;
 import org.webrtc.VideoCapturer;
 import org.webrtc.VideoSource;
@@ -24,7 +27,6 @@ public class cameraRenderActivity extends AppCompatActivity {
     public static final int FPS = 30;
     EglBase rootEglBase;
     SurfaceViewRenderer surface_view;
-    private PeerConnectionFactory peerConnectionFactory;
 
 //    private com.W3Dev.w3devcalling.ActivitySampleCameraRenderBinding binding;
 
@@ -60,7 +62,7 @@ public class cameraRenderActivity extends AppCompatActivity {
                 rootEglBase.getEglBaseContext(),  /* enableIntelVp8Encoder */true,  /* enableH264HighProfile */true);
         DefaultVideoDecoderFactory defaultVideoDecoderFactory = new DefaultVideoDecoderFactory(rootEglBase.getEglBaseContext());
 
-        peerConnectionFactory = PeerConnectionFactory.builder()
+        PeerConnectionFactory peerConnectionFactory = PeerConnectionFactory.builder()
                 .setOptions(options)
                 .setVideoEncoderFactory(defaultVideoEncoderFactory)
                 .setVideoDecoderFactory(defaultVideoDecoderFactory)
@@ -68,7 +70,6 @@ public class cameraRenderActivity extends AppCompatActivity {
 
         createVideoTrackAndShowIt(peerConnectionFactory);
     }
-
 /*
     private void initializePeerConnectionFactory() {
 
@@ -85,8 +86,6 @@ public class cameraRenderActivity extends AppCompatActivity {
         VideoTrack localVideoTrack = peerConnectionFactory.createVideoTrack(VIDEO_TRACK_ID, videoSource);
         localVideoTrack.setEnabled(true);
         localVideoTrack.addSink(surface_view);
-
-
     }
 
 
@@ -130,4 +129,6 @@ public class cameraRenderActivity extends AppCompatActivity {
     private boolean useCamera2() {
         return Camera2Enumerator.isSupported(this);
     }
+
+
 }
