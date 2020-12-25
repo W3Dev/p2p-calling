@@ -17,6 +17,7 @@ import org.webrtc.PeerConnectionFactory;
 import org.webrtc.SurfaceTextureHelper;
 import org.webrtc.SurfaceViewRenderer;
 import org.webrtc.VideoCapturer;
+import org.webrtc.VideoRenderer;
 import org.webrtc.VideoSource;
 import org.webrtc.VideoTrack;
 
@@ -27,8 +28,6 @@ public class cameraRenderActivity extends AppCompatActivity {
     public static final int FPS = 30;
     EglBase rootEglBase;
     SurfaceViewRenderer surface_view;
-
-//    private com.W3Dev.w3devcalling.ActivitySampleCameraRenderBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,8 +44,12 @@ public class cameraRenderActivity extends AppCompatActivity {
         surface_view.setEnableHardwareScaler(true);
         surface_view.setMirror(true);
 
+        PeerConnectionFactory.initializeAndroidGlobals(this, true, true, true);
+        PeerConnectionFactory peerConnectionFactory = new PeerConnectionFactory(null);
+        peerConnectionFactory.setVideoHwAccelerationOptions(rootEglBase.getEglBaseContext(), rootEglBase.getEglBaseContext());
+        ;
 
-        PeerConnectionFactory.InitializationOptions initializationOptions =
+/*     {   PeerConnectionFactory.InitializationOptions initializationOptions =
                 PeerConnectionFactory.InitializationOptions.builder(getApplicationContext())
                         .setEnableInternalTracer(true)
                         .setFieldTrials("WebRTC-H264HighProfile/Enabled/")
@@ -59,33 +62,27 @@ public class cameraRenderActivity extends AppCompatActivity {
         options.disableEncryption = true;
         options.disableNetworkMonitor = true;
         DefaultVideoEncoderFactory defaultVideoEncoderFactory = new DefaultVideoEncoderFactory(
-                rootEglBase.getEglBaseContext(),  /* enableIntelVp8Encoder */true,  /* enableH264HighProfile */true);
+                rootEglBase.getEglBaseContext(),  *//* enableIntelVp8Encoder *//*true,  *//* enableH264HighProfile *//*true);
         DefaultVideoDecoderFactory defaultVideoDecoderFactory = new DefaultVideoDecoderFactory(rootEglBase.getEglBaseContext());
 
         PeerConnectionFactory peerConnectionFactory = PeerConnectionFactory.builder()
                 .setOptions(options)
                 .setVideoEncoderFactory(defaultVideoEncoderFactory)
                 .setVideoDecoderFactory(defaultVideoDecoderFactory)
-                .createPeerConnectionFactory();
+                .createPeerConnectionFactory();}*/
 
         createVideoTrackAndShowIt(peerConnectionFactory);
     }
-/*
-    private void initializePeerConnectionFactory() {
-
-        //Todo :peerconnection Initialised
-
-    }
-*/
 
     private void createVideoTrackAndShowIt(PeerConnectionFactory peerConnectionFactory) {
         VideoCapturer videoCapturer = createVideoCapturer();
-        VideoSource videoSource = peerConnectionFactory.createVideoSource(videoCapturer.isScreencast());
+        VideoSource videoSource = peerConnectionFactory.createVideoSource(videoCapturer);
         videoCapturer.startCapture(VIDEO_RESOLUTION_WIDTH, VIDEO_RESOLUTION_HEIGHT, FPS);
 
         VideoTrack localVideoTrack = peerConnectionFactory.createVideoTrack(VIDEO_TRACK_ID, videoSource);
         localVideoTrack.setEnabled(true);
-        localVideoTrack.addSink(surface_view);
+//        localVideoTrack.addSink(surface_view);
+        localVideoTrack.addRenderer(new VideoRenderer(surface_view));
     }
 
 

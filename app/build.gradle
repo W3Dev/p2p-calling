@@ -42,5 +42,9 @@ dependencies {
         exclude group: 'org.json', module: 'json'
 
         implementation 'gun0912.ted:tedpermission:2.2.3'
+
+        compile files('libs/autobanh.jar')
+        compile files('libs/base_java.jar')
+        compile files('libs/libjingle_peerconnection.jar')
     }
 }
