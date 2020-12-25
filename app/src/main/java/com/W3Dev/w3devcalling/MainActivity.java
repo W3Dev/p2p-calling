@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
 
 //MirtDPM4
 
-    private void doAnswer() {
+/*    private void doAnswer() {
         peerConnection.createAnswer(new SimpleSdpObserver() {
             @Override
             public void onCreateSuccess(SessionDescription sessionDescription) {
@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }, new MediaConstraints());
-    }
+    }*/
 
     private void maybeStart() {
         Log.d(TAG, "maybeStart: " + isStarted + " " + isChannelReady);
@@ -122,7 +122,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-
     private void doCall() {
         MediaConstraints sdpMediaConstraints = new MediaConstraints();
 

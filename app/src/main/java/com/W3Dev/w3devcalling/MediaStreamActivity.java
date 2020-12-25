@@ -100,11 +100,11 @@ public class MediaStreamActivity extends AppCompatActivity {
                 .setVideoEncoderFactory(defaultVideoEncoderFactory)
                 .setVideoDecoderFactory(defaultVideoDecoderFactory)
                 .createPeerConnectionFactory();
-        localPeerConnection = createPeerConnection(peerConnectionFactory, true);
-        remotePeerConnection = createPeerConnection(peerConnectionFactory, false);
+/*        localPeerConnection = createPeerConnection(peerConnectionFactory, true);
+        remotePeerConnection = createPeerConnection(peerConnectionFactory, false);*/
 
     }
-
+/*
     private PeerConnection createPeerConnection(PeerConnectionFactory peerConnectionFactory, boolean isLocal) {
         //TODO List of stuns
         MediaConstraints pcConstraints = new MediaConstraints();
@@ -176,7 +176,7 @@ public class MediaStreamActivity extends AppCompatActivity {
         };
 //        return peerConnectionFactory.createPeerConnection(pcConstraints,pcObserver);
 
-    }
+    }*/
 
     private void createVideoTrackFromCameraAndShowIt() {
         VideoCapturer videoCapturer = createVideoCapturer();
