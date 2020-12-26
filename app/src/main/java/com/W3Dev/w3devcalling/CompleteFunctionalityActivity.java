@@ -3,7 +3,10 @@ package com.W3Dev.w3devcalling;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.webrtc.Camera1Enumerator;
 import org.webrtc.Camera2Enumerator;
 import org.webrtc.CameraEnumerator;
@@ -139,7 +142,20 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
 
             @Override
             public void onIceCandidate(IceCandidate iceCandidate) {
+                Log.d(TAG, "onIceCandidate: ");
+                JSONObject message = new JSONObject();
 
+                try {
+                    message.put("type", "candidate");
+                    message.put("label", iceCandidate.sdpMLineIndex);
+                    message.put("id", iceCandidate.sdpMid);
+                    message.put("candidate", iceCandidate.sdp);
+
+                    Log.d(TAG, "onIceCandidate: sending candidate " + message);
+                    sendMessage(message);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
             }
 
             @Override
@@ -149,6 +165,10 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
 
             @Override
             public void onAddStream(MediaStream mediaStream) {
+                Log.d(TAG, "onAddStream: " + mediaStream.videoTracks.size());
+                VideoTrack remoteVideoTrack = mediaStream.videoTracks.get(0);
+                remoteVideoTrack.setEnabled(true);
+                remoteVideoTrack.addRenderer(new VideoRenderer(surface_view2));
 
             }
 
@@ -171,6 +191,10 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
         return factory.createPeerConnection(rtcConfig, pcConstraints, pcObserver);
 
 
+    }
+
+    private void sendMessage(JSONObject message) {
+        socket.emit("message", message);
     }
 
     private VideoCapturer createVideoCapturer() {
