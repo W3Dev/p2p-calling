@@ -2,6 +2,7 @@ package com.W3Dev.w3devcalling;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.opengl.GLSurfaceView;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -9,8 +10,8 @@ import org.webrtc.Camera1Enumerator;
 import org.webrtc.Camera2Enumerator;
 import org.webrtc.CameraEnumerator;
 import org.webrtc.DataChannel;
-import org.webrtc.DefaultVideoDecoderFactory;
-import org.webrtc.DefaultVideoEncoderFactory;
+/*import org.webrtc.DefaultVideoDecoderFactory;
+import org.webrtc.DefaultVideoEncoderFactory;*/
 import org.webrtc.EglBase;
 import org.webrtc.IceCandidate;
 import org.webrtc.MediaConstraints;
@@ -50,7 +51,9 @@ public class MediaStreamActivity extends AppCompatActivity {
 
         initializeSurfaceViews();
 
+/*
         initializePeerConnections();
+*/
 
         createVideoTrackFromCameraAndShowIt();
 
@@ -76,6 +79,7 @@ public class MediaStreamActivity extends AppCompatActivity {
 
     }
 
+/*
     private void initializePeerConnections() {
         //Todo :peerconnection Initialised
 
@@ -92,7 +96,11 @@ public class MediaStreamActivity extends AppCompatActivity {
         options.disableEncryption = true;
         options.disableNetworkMonitor = true;
         DefaultVideoEncoderFactory defaultVideoEncoderFactory = new DefaultVideoEncoderFactory(
-                rootEglBase.getEglBaseContext(),  /* enableIntelVp8Encoder */true,  /* enableH264HighProfile */true);
+                rootEglBase.getEglBaseContext(),  */
+    /* enableIntelVp8Encoder *//*
+true,  */
+    /* enableH264HighProfile *//*
+true);
         DefaultVideoDecoderFactory defaultVideoDecoderFactory = new DefaultVideoDecoderFactory(rootEglBase.getEglBaseContext());
 
         peerConnectionFactory = PeerConnectionFactory.builder()
@@ -100,10 +108,13 @@ public class MediaStreamActivity extends AppCompatActivity {
                 .setVideoEncoderFactory(defaultVideoEncoderFactory)
                 .setVideoDecoderFactory(defaultVideoDecoderFactory)
                 .createPeerConnectionFactory();
+*/
 /*        localPeerConnection = createPeerConnection(peerConnectionFactory, true);
-        remotePeerConnection = createPeerConnection(peerConnectionFactory, false);*/
+        remotePeerConnection = createPeerConnection(peerConnectionFactory, false);*//*
+
 
     }
+*/
 /*
     private PeerConnection createPeerConnection(PeerConnectionFactory peerConnectionFactory, boolean isLocal) {
         //TODO List of stuns
@@ -180,12 +191,12 @@ public class MediaStreamActivity extends AppCompatActivity {
 
     private void createVideoTrackFromCameraAndShowIt() {
         VideoCapturer videoCapturer = createVideoCapturer();
-        VideoSource videoSource = peerConnectionFactory.createVideoSource(videoCapturer.isScreencast());
+        VideoSource videoSource = peerConnectionFactory.createVideoSource(videoCapturer);
         videoCapturer.startCapture(VIDEO_RESOLUTION_WIDTH, VIDEO_RESOLUTION_HEIGHT, FPS);
 
         videoTrackFromCamera = peerConnectionFactory.createVideoTrack(VIDEO_TRACK_ID, videoSource);
         videoTrackFromCamera.setEnabled(true);
-        videoTrackFromCamera.addSink(surface_view);
+//        videoTrackFromCamera.addRenderer(new GLSurfaceView.Renderer(surface_view));
 
     }
 

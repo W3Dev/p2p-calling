@@ -9,9 +9,9 @@ import android.view.SurfaceView;
 import org.webrtc.Camera1Enumerator;
 import org.webrtc.Camera2Enumerator;
 import org.webrtc.CameraEnumerator;
-import org.webrtc.CapturerObserver;
+/*import org.webrtc.CapturerObserver;
 import org.webrtc.DefaultVideoDecoderFactory;
-import org.webrtc.DefaultVideoEncoderFactory;
+import org.webrtc.DefaultVideoEncoderFactory;*/
 import org.webrtc.EglBase;
 import org.webrtc.PeerConnectionFactory;
 import org.webrtc.SurfaceTextureHelper;

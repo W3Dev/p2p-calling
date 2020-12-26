@@ -86,7 +86,9 @@ public class MainActivity extends AppCompatActivity {
 
             createVideoTrackFromCameraAndShowIt();
 
+/*
             initializePeerConnections();
+*/
 
             startStreamingVideo();
         } else {
@@ -160,9 +162,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+/*
     private void initializePeerConnections() {
         peerConnection = createPeerConnection(factory);
     }
+*/
 
     private void startStreamingVideo() {
         MediaStream mediaStream = factory.createLocalMediaStream("ARDAMS");
@@ -172,6 +176,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+/*
     private PeerConnection createPeerConnection(PeerConnectionFactory factory) {
         ArrayList<PeerConnection.IceServer> iceServers = new ArrayList<>();
         iceServers.add(new PeerConnection.IceServer("stun:stun.l.google.com:19302"));
@@ -251,6 +256,7 @@ public class MainActivity extends AppCompatActivity {
 
         return factory.createPeerConnection(rtcConfig, pcConstraints, pcObserver);
     }
+*/
 
     private VideoCapturer createVideoCapturer() {
         VideoCapturer videoCapturer;

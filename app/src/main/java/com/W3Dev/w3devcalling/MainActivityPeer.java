@@ -15,8 +15,8 @@ import org.webrtc.CameraEnumerator;
 import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.TedPermission;
 
-import org.webrtc.DefaultVideoDecoderFactory;
-import org.webrtc.DefaultVideoEncoderFactory;
+/*import org.webrtc.DefaultVideoDecoderFactory;
+import org.webrtc.DefaultVideoEncoderFactory;*/
 import org.webrtc.EglBase;
 import org.webrtc.MediaConstraints;
 import org.webrtc.PeerConnection;
@@ -62,18 +62,18 @@ public class MainActivityPeer extends AppCompatActivity {
         setContentView(R.layout.activity_main_peer);
 
         //TODO: all muticals:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-        muticals();
+//        muticals();
 /*       iceServer= PeerConnection.IceServer.builder("stun:stun.l.google.com:19302")
                .createIceServer();*/
         //TODO Buttons :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-        RequestPermissions();
+//        RequestPermissions();
 
 
     }
 
 
-    //TODO all functions::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+   /* //TODO all functions::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
     private void muticals() {
         surface_view = findViewById(R.id.surface_view);
@@ -85,7 +85,9 @@ public class MainActivityPeer extends AppCompatActivity {
             public void onPermissionGranted() {
                 Toast.makeText(getApplicationContext(), "Permission Granted", Toast.LENGTH_SHORT).show();
                 initializeSurfaceViews();
+*//*
                 initializePeerConnectionFactory();
+*//*
                 createVideoTrackFromCameraAndShowIt();
 
             }
@@ -114,6 +116,7 @@ public class MainActivityPeer extends AppCompatActivity {
         surface_view2.setEnableHardwareScaler(true);
         surface_view2.setMirror(true);
     }
+*//*
     private void initializePeerConnectionFactory() {
 
         //Todo :peerconnection Initialised
@@ -131,7 +134,11 @@ public class MainActivityPeer extends AppCompatActivity {
         options.disableEncryption = true;
         options.disableNetworkMonitor = true;
         DefaultVideoEncoderFactory defaultVideoEncoderFactory = new DefaultVideoEncoderFactory(
-                rootEglBase.getEglBaseContext(),  /* enableIntelVp8Encoder */true,  /* enableH264HighProfile */true);
+                rootEglBase.getEglBaseContext(),  *//*
+     *//* enableIntelVp8Encoder *//**//*
+true,  *//*
+     *//* enableH264HighProfile *//**//*
+true);
         DefaultVideoDecoderFactory defaultVideoDecoderFactory = new DefaultVideoDecoderFactory(rootEglBase.getEglBaseContext());
 
         peerConnectionFactory = PeerConnectionFactory.builder()
@@ -140,6 +147,7 @@ public class MainActivityPeer extends AppCompatActivity {
                 .setVideoDecoderFactory(defaultVideoDecoderFactory)
                 .createPeerConnectionFactory();
     }
+*//*
 
 
 
@@ -150,10 +158,10 @@ public class MainActivityPeer extends AppCompatActivity {
         if (videoCapturer != null) {
             SurfaceTextureHelper surfaceTextureHelper = SurfaceTextureHelper.create("CaptureThread"
                     , rootEglBase.getEglBaseContext());
-            videoSource = peerConnectionFactory.createVideoSource(videoCapturer.isScreencast());
-            videoCapturer.initialize(surfaceTextureHelper, getApplicationContext(), videoSource.getCapturerObserver());
+            videoSource = peerConnectionFactory.createVideoSource(videoCapturer);
+       *//*     videoCapturer.initialize(surfaceTextureHelper, getApplicationContext(), videoSource.getCapturerObserver());
 
-
+     *//*
         }
 
         assert videoCapturer != null;
@@ -229,12 +237,12 @@ public class MainActivityPeer extends AppCompatActivity {
     }
 
 
-/*    private void buildPeerConnection(PeerConnection.Observer observer){
+*//*    private void buildPeerConnection(PeerConnection.Observer observer){
         factory.createPeerConnection((List<PeerConnection.IceServer>) PeerConnection.IceServer
                 .builder("stun:stun.l.google.com:19302")
                 .createIceServer(),observer);
-    }*/
-/*    private void observationCall {
+    }*//*
+     *//*    private void observationCall {
 
         sdpConstraints=MediaConstraints.
         SdpObserver sdpObserver=new SdpObserver() {
@@ -260,11 +268,11 @@ public class MainActivityPeer extends AppCompatActivity {
         }
 
 
-    }*/
+    }*//*
 
 
 public void createanswer() {
-}
+}*/
 
 }
 
