@@ -72,11 +72,6 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
         startStreamingVideo();
 
     }
-
-    private void startStreamingVideo() {
-    }
-
-
     private void connectToSignallingServer() {
     }
 
@@ -111,6 +106,13 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
 
     private void initializePeerConnections() {
         peerConnection = createPeerConnection(factory);
+    }
+
+    private void startStreamingVideo() {
+        MediaStream mediaStream = factory.createLocalMediaStream("ARDAMS");
+        mediaStream.addTrack(videoTrackFromCamera);
+        peerConnection.addStream(mediaStream);
+
     }
 
     private PeerConnection createPeerConnection(PeerConnectionFactory factory) {
