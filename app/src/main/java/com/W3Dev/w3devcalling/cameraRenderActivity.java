@@ -47,30 +47,6 @@ public class cameraRenderActivity extends AppCompatActivity {
         PeerConnectionFactory.initializeAndroidGlobals(this, true, true, true);
         PeerConnectionFactory peerConnectionFactory = new PeerConnectionFactory(null);
         peerConnectionFactory.setVideoHwAccelerationOptions(rootEglBase.getEglBaseContext(), rootEglBase.getEglBaseContext());
-        ;
-
-/*     {   PeerConnectionFactory.InitializationOptions initializationOptions =
-                PeerConnectionFactory.InitializationOptions.builder(getApplicationContext())
-                        .setEnableInternalTracer(true)
-                        .setFieldTrials("WebRTC-H264HighProfile/Enabled/")
-                        .createInitializationOptions();
-        PeerConnectionFactory.initialize(initializationOptions);
-
-        //Create a new PeerConnectionFactory instance - using Hardware encoder and decoder.
-
-        PeerConnectionFactory.Options options = new PeerConnectionFactory.Options();
-        options.disableEncryption = true;
-        options.disableNetworkMonitor = true;
-        DefaultVideoEncoderFactory defaultVideoEncoderFactory = new DefaultVideoEncoderFactory(
-                rootEglBase.getEglBaseContext(),  *//* enableIntelVp8Encoder *//*true,  *//* enableH264HighProfile *//*true);
-        DefaultVideoDecoderFactory defaultVideoDecoderFactory = new DefaultVideoDecoderFactory(rootEglBase.getEglBaseContext());
-
-        PeerConnectionFactory peerConnectionFactory = PeerConnectionFactory.builder()
-                .setOptions(options)
-                .setVideoEncoderFactory(defaultVideoEncoderFactory)
-                .setVideoDecoderFactory(defaultVideoDecoderFactory)
-                .createPeerConnectionFactory();}*/
-
         createVideoTrackAndShowIt(peerConnectionFactory);
     }
 
@@ -81,7 +57,7 @@ public class cameraRenderActivity extends AppCompatActivity {
 
         VideoTrack localVideoTrack = peerConnectionFactory.createVideoTrack(VIDEO_TRACK_ID, videoSource);
         localVideoTrack.setEnabled(true);
-//        localVideoTrack.addSink(surface_view);
+
         localVideoTrack.addRenderer(new VideoRenderer(surface_view));
     }
 
@@ -99,7 +75,7 @@ public class cameraRenderActivity extends AppCompatActivity {
     private VideoCapturer createCameraCapturer(CameraEnumerator enumerator) {
         final String[] deviceNames = enumerator.getDeviceNames();
 
-        // First, try to find front facing camera
+
         for (String deviceName : deviceNames) {
             if (enumerator.isFrontFacing(deviceName)) {
                 VideoCapturer videoCapturer = enumerator.createCapturer(deviceName, null);
@@ -111,6 +87,7 @@ public class cameraRenderActivity extends AppCompatActivity {
         }
 
         // Front facing camera not found, try something else
+
         for (String deviceName : deviceNames) {
             if (!enumerator.isFrontFacing(deviceName)) {
                 VideoCapturer videoCapturer = enumerator.createCapturer(deviceName, null);

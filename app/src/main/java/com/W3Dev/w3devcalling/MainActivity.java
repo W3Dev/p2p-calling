@@ -324,6 +324,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), cameraRenderActivity.class));
             }
         });
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), CompleteFunctionalityActivity.class));
+            }
+        });
     }
 
     private void RequestPermissions() {
