@@ -22,6 +22,7 @@ import org.webrtc.VideoSource;
 import org.webrtc.VideoTrack;
 
 public class cameraRenderActivity extends AppCompatActivity {
+
     public static final String VIDEO_TRACK_ID = "ARDAMSv0";
     public static final int VIDEO_RESOLUTION_WIDTH = 1280;
     public static final int VIDEO_RESOLUTION_HEIGHT = 720;
@@ -34,7 +35,6 @@ public class cameraRenderActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera_render);
         initialixeSurfaceView();
-//        initializePeerConnectionFactory();
     }
 
     private void initialixeSurfaceView() {
@@ -61,7 +61,6 @@ public class cameraRenderActivity extends AppCompatActivity {
         localVideoTrack.addRenderer(new VideoRenderer(surface_view));
     }
 
-
     private VideoCapturer createVideoCapturer() {
         VideoCapturer videoCapturer;
         if (useCamera2()) {
@@ -85,9 +84,6 @@ public class cameraRenderActivity extends AppCompatActivity {
                 }
             }
         }
-
-        // Front facing camera not found, try something else
-
         for (String deviceName : deviceNames) {
             if (!enumerator.isFrontFacing(deviceName)) {
                 VideoCapturer videoCapturer = enumerator.createCapturer(deviceName, null);
@@ -100,6 +96,7 @@ public class cameraRenderActivity extends AppCompatActivity {
 
         return null;
     }
+
     private boolean useCamera2() {
         return Camera2Enumerator.isSupported(this);
     }

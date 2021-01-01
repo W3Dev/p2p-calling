@@ -1,6 +1,5 @@
 package com.W3Dev.w3devcalling;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
@@ -9,6 +8,8 @@ import android.util.Log;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.webrtc.AudioSource;
+import org.webrtc.AudioTrack;
 import org.webrtc.Camera1Enumerator;
 import org.webrtc.Camera2Enumerator;
 import org.webrtc.CameraEnumerator;
@@ -42,16 +43,18 @@ import static org.webrtc.SessionDescription.Type.OFFER;
 public class CompleteFunctionalityActivity extends AppCompatActivity {
     private static final String TAG = "CompleteActivity";
     private static final int RC_CALL = 111;
-
     public static final String VIDEO_TRACK_ID = "ARDAMSv0";
     public static final int VIDEO_RESOLUTION_WIDTH = 1280;
     public static final int VIDEO_RESOLUTION_HEIGHT = 720;
     public static final int FPS = 30;
     private Socket socket;
+    MediaConstraints audioConstraints;
     private boolean isInitiator;
     private boolean isChannelReady;
     private boolean isStarted;
     private PeerConnection peerConnection;
+    AudioSource audioSource;
+    AudioTrack localAudioTrack;
     private EglBase rootEglBase;
     private SurfaceViewRenderer surface_view1;
     private SurfaceViewRenderer surface_view2;
@@ -66,7 +69,6 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
         surface_view2 = findViewById(R.id.surface_view2);
         start();
     }
-
 
     @Override
     protected void onDestroy() {
@@ -233,6 +235,7 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
     }
 
     private void createVideoTrackFromCameraAndShowIt() {
+        audioConstraints = new MediaConstraints();
         VideoCapturer videoCapturer = createVideoCapturer();
         VideoSource videoSource = factory.createVideoSource(videoCapturer);
         videoCapturer.startCapture(VIDEO_RESOLUTION_WIDTH, VIDEO_RESOLUTION_HEIGHT, FPS);
@@ -240,6 +243,10 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
         videoTrackFromCamera = factory.createVideoTrack(VIDEO_TRACK_ID, videoSource);
         videoTrackFromCamera.setEnabled(true);
         videoTrackFromCamera.addRenderer(new VideoRenderer(surface_view1));
+
+
+        audioSource = factory.createAudioSource(audioConstraints);
+        localAudioTrack = factory.createAudioTrack("101", audioSource);
     }
 
     private void initializePeerConnections() {
@@ -249,6 +256,7 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
     private void startStreamingVideo() {
         MediaStream mediaStream = factory.createLocalMediaStream("ARDAMS");
         mediaStream.addTrack(videoTrackFromCamera);
+        mediaStream.addTrack(localAudioTrack);
         peerConnection.addStream(mediaStream);
 
         sendMessage("got user media");
@@ -372,6 +380,4 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
     private boolean useCamera2() {
         return Camera2Enumerator.isSupported(this);
     }
-
-
 }
