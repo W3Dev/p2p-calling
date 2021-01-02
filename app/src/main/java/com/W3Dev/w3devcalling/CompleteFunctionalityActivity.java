@@ -258,7 +258,6 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
         mediaStream.addTrack(videoTrackFromCamera);
         mediaStream.addTrack(localAudioTrack);
         peerConnection.addStream(mediaStream);
-
         sendMessage("got user media");
     }
 
