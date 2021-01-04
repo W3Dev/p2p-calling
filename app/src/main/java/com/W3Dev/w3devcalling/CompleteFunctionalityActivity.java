@@ -6,6 +6,8 @@ import android.Manifest;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.W3Dev.w3devcalling.web_rtc.AppRTCAudioManager;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.webrtc.AudioSource;
@@ -29,6 +31,7 @@ import org.webrtc.VideoTrack;
 
 import java.net.URISyntaxException;
 import java.util.ArrayList;
+import java.util.Set;
 
 import io.socket.client.IO;
 import io.socket.client.Socket;
@@ -53,6 +56,7 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
     private boolean isChannelReady;
     private boolean isStarted;
     private PeerConnection peerConnection;
+    private AppRTCAudioManager audioManager;
     AudioSource audioSource;
     AudioTrack localAudioTrack;
     private EglBase rootEglBase;
@@ -244,9 +248,17 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
         videoTrackFromCamera.setEnabled(true);
         videoTrackFromCamera.addRenderer(new VideoRenderer(surface_view1));
 
+        audioManager = AppRTCAudioManager.create(this);
+        audioManager.start(this::onAudioManagerDevicesChanged);
+
 
         audioSource = factory.createAudioSource(audioConstraints);
         localAudioTrack = factory.createAudioTrack("101", audioSource);
+    }
+
+    private void onAudioManagerDevicesChanged(
+            final AppRTCAudioManager.AudioDevice device, final Set<AppRTCAudioManager.AudioDevice> availableDevices) {
+        // TODO(henrika): add callback handler.
     }
 
     private void initializePeerConnections() {
