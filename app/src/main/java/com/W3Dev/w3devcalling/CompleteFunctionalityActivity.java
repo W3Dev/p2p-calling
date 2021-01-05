@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.Manifest;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.WindowManager;
 
 import com.W3Dev.w3devcalling.web_rtc.AppRTCAudioManager;
 
@@ -68,6 +69,7 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_complete_functionality);
         surface_view1 = findViewById(R.id.surface_view1);
         surface_view2 = findViewById(R.id.surface_view2);
