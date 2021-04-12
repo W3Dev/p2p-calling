@@ -1,276 +1,276 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:2:1-38:12
-MERGED from [com.google.android.material:material:1.2.1] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/b988cdf40af7cdf3e0317011f8e5bfe7/material-1.2.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/ec4dd897d4037390d3cac18fc3984d5c/constraintlayout-2.0.4/AndroidManifest.xml:2:1-11:12
-MERGED from [pub.devrel:easypermissions:1.1.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/5b6285a1f40f04ebdd86f13951154976/jetified-easypermissions-1.1.3/AndroidManifest.xml:2:1-19:12
-MERGED from [gun0912.ted:tedpermission:2.2.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/4536fd215d7f20494bf01a76476349b0/jetified-tedpermission-2.2.3/AndroidManifest.xml:2:1-17:12
-MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/a527ad4f532df6b258c428a911debd89/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/0ccf7d1f41f08a9fbac49eb844da8039/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/312f83425808e5212ec527eb40bbd563/rxandroid-2.0.1/AndroidManifest.xml:15:1-21:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/9d4053b57d170770335ff225b77d62ba/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/85bbcabe709b3efb54d74d18f7977a81/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/0d889d0bca3861f2da10545da7c4132e/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.fragment:fragment:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/935c1eb103e362446c63f75dbc889f07/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/045ecda214dc48a7b6794acabc444ee0/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/142e93d95da0344235eb82ee7f05a108/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/ef9c997edfa62b91e0d370b598210169/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/0d4494bee4a56a30051f107c7a8e3c94/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.transition:transition:1.2.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/04d9fa679ff5e7b592ee980c8b38c907/transition-1.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/715ac09ebebe6f055fd8c27935b09c71/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/24a7c4b656e8849fce6b1ec879de45c1/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.media:media:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/b92201a39ca35c5371c82710bc662dc7/media-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/bdfbb38555a741f74d62c90cf85e0b35/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/b437c8e4cf053fd87bc8836cb75ffd62/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/a8f36a69659c55a007f35cfecb9dcfc6/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/7b541f4196cf846f7dd467165838e072/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/28b4aa78b7d7c16150815353e8235a9e/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/30364a4e1d148d54a282aaa580ec2e4d/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/dcd86c4e1bc7b82faa13cfa95eb5ce30/customview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/d38c28a7a4bd66deb92fbaacca82413e/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/18aae0e1403cb9536d945989108c14a5/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.3.1] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/ff37b710ecf84191a2687617c776753e/core-1.3.1/AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/94115104efb23786ea53cd1a51dde3af/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/9b14025540e1c0e0278fee415366684e/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/3e9337dfc055970a9422bc379c54bdcb/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/48eb1e8d8b8ad7006b2f3cf24b65d608/print-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/884715ee5d4759e99f0bf4b3058e7279/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/eb25aa6fb92793269536cebf4ca0a993/lifecycle-runtime-2.1.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/cbfdfe08c267cf71c6eae9047a7b16ca/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/335a1a6eb49eac2eab041286c81584a5/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/31a15a162cd7bb718e862c0cc13bfa61/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/af090a78eaea8296976d6555a3a135f2/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/4277c449ae4e7defb11901a027a49277/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/01339aeadc2379d14234ec1725fb1d1d/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:2:1-38:12
+ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:2:1-38:12
+MERGED from [com.google.android.material:material:1.2.1] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/7e5b6cf970b6ee458e94f0de4554e685/material-1.2.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/73327337a728e12c5c3cdecdb4b7e327/constraintlayout-2.0.4/AndroidManifest.xml:2:1-11:12
+MERGED from [pub.devrel:easypermissions:1.1.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/90cfbe2c388968ce584dad43397efeca/jetified-easypermissions-1.1.3/AndroidManifest.xml:2:1-19:12
+MERGED from [gun0912.ted:tedpermission:2.2.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/e417541634f5f4a7d7d977975af4915f/jetified-tedpermission-2.2.3/AndroidManifest.xml:2:1-17:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/44b21666f861b2b454523071d69d07d7/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/d9c8547f43bfc98a7c33c7a922993a2d/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/eee3cb7347c6e95c704a40db2a35f6ca/jetified-rxandroid-2.0.1/AndroidManifest.xml:15:1-21:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/e74634e20d1ec32457b9cc4f401ffea1/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/082141e7a08ecc0568dc277abb6b2eb2/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/3b91b187821fc6e4f6300506297b769e/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/2caca0665cfc150845d481add640d717/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/78be485c09b159ccd6437b5ce26410a0/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/90ad92d9d7e544d3d7a553e07e526cde/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/6a8e87f523c55e5b29d9c4a3f69e8c47/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/5fcf58f467c61301f7dd22175ddca6ba/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/b154dbc73687587a7ce14e229cc71d1e/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/9d3d448a3878af78f8d5e2175d6f4332/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/a5f1739a336003917307af1b7a40c6ec/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/7f64c1045ae362310688a10253c2a109/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/9b319768499df63b1d0933a3c55ff3e7/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/921fb1c1970f14455564b73ac43ed75b/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/19ba019dbf22e650e8e95d7507462ba8/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/1c867de8727b52b88cec2ad3aed090ac/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/76a75c6502d93031e6f1d463ce4e8940/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/9726f16beb884e69c8392eb74d42aa95/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/4d3225ea5d57f620bf5356e2a6f066d6/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/f9976ae113f170d60bfcc789044f411d/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/b754b2dac55e2d093f3d16fae3e2b72a/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.3.1] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/8dbd859d1cd89239b42e7382b4fc40d7/core-1.3.1/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/1b49f6b12087442447a2c9046372b97f/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/07966c8c4706ffeaf638d555f4c86fb0/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/41c41c2fbc05e9a19fa443c48f799c3d/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/634f2f03e50a0eb4514a8d791ceb2f13/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/054d779a91766207571d826869795163/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/a5508913c832bc0c65ebd72baf7fb6d8/lifecycle-runtime-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/384d88a73e203b8300027f46f36e4e61/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/ac846bd1991b3727d0d9b0a2719ca5c8/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/5e93b9f41c3983a761aa6e19533f24ec/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/1435e0b5216c3fd72a2d6579c29d3ee1/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/035487676af6db782633ffbdc1d98b21/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/3fd5b4b866d23b43b0e15439a0ee99e7/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:2:1-38:12
 	package
-		ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:3:5-37
-		INJECTED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml
+		ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:3:5-37
+		INJECTED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml
-		ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:2:1-38:12
-		INJECTED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml
+		ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:2:1-38:12
+		INJECTED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml
-		ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:2:1-38:12
-		INJECTED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml
+		ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:2:1-38:12
+		INJECTED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:2:11-69
 uses-feature#android.hardware.camera
-ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:5:5-60
+ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:5:5-60
 	android:name
-		ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:5:19-57
+		ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:5:19-57
 uses-feature#android.hardware.camera.autofocus
-ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:6:5-70
+ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:6:5-70
 	android:name
-		ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:6:19-67
+		ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:6:19-67
 uses-feature#0x00020000
-ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:7:5-9:35
+ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:7:5-9:35
 	android:glEsVersion
-		ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:8:9-41
+		ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:8:9-41
 	android:required
-		ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:9:9-32
+		ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:9:9-32
 uses-permission#android.permission.CAMERA
-ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:11:5-65
+ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:11:5-65
 	android:name
-		ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:11:22-62
+		ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:11:22-62
 uses-permission#android.permission.CHANGE_NETWORK_STATE
-ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:12:5-79
+ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:12:5-79
 	android:name
-		ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:12:22-76
+		ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:12:22-76
 uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
-ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:13:5-80
+ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:13:5-80
 	android:name
-		ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:13:22-77
+		ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:13:22-77
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:14:5-71
+ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:14:5-71
 	android:name
-		ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:14:22-68
+		ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:14:22-68
 uses-permission#android.permission.INTERNET
-ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:15:5-67
+ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:15:5-67
 	android:name
-		ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:15:22-64
+		ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:15:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:16:5-81
+ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:16:5-81
 	android:name
-		ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:16:22-78
+		ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:16:22-78
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:17:5-79
+ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:17:5-79
 	android:name
-		ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:17:22-76
+		ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:17:22-76
 uses-permission#android.permission.BLUETOOTH
-ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:18:5-68
+ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:18:5-68
 	android:name
-		ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:18:22-65
+		ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:18:22-65
 application
-ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:20:5-36:19
-MERGED from [com.google.android.material:material:1.2.1] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/b988cdf40af7cdf3e0317011f8e5bfe7/material-1.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.2.1] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/b988cdf40af7cdf3e0317011f8e5bfe7/material-1.2.1/AndroidManifest.xml:22:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/ec4dd897d4037390d3cac18fc3984d5c/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/ec4dd897d4037390d3cac18fc3984d5c/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
-MERGED from [pub.devrel:easypermissions:1.1.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/5b6285a1f40f04ebdd86f13951154976/jetified-easypermissions-1.1.3/AndroidManifest.xml:11:5-17:19
-MERGED from [pub.devrel:easypermissions:1.1.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/5b6285a1f40f04ebdd86f13951154976/jetified-easypermissions-1.1.3/AndroidManifest.xml:11:5-17:19
-MERGED from [gun0912.ted:tedpermission:2.2.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/4536fd215d7f20494bf01a76476349b0/jetified-tedpermission-2.2.3/AndroidManifest.xml:9:5-15:19
-MERGED from [gun0912.ted:tedpermission:2.2.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/4536fd215d7f20494bf01a76476349b0/jetified-tedpermission-2.2.3/AndroidManifest.xml:9:5-15:19
-MERGED from [androidx.core:core:1.3.1] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/ff37b710ecf84191a2687617c776753e/core-1.3.1/AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.3.1] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/ff37b710ecf84191a2687617c776753e/core-1.3.1/AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/94115104efb23786ea53cd1a51dde3af/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/94115104efb23786ea53cd1a51dde3af/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:20:5-36:19
+MERGED from [com.google.android.material:material:1.2.1] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/7e5b6cf970b6ee458e94f0de4554e685/material-1.2.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.2.1] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/7e5b6cf970b6ee458e94f0de4554e685/material-1.2.1/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/73327337a728e12c5c3cdecdb4b7e327/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/73327337a728e12c5c3cdecdb4b7e327/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
+MERGED from [pub.devrel:easypermissions:1.1.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/90cfbe2c388968ce584dad43397efeca/jetified-easypermissions-1.1.3/AndroidManifest.xml:11:5-17:19
+MERGED from [pub.devrel:easypermissions:1.1.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/90cfbe2c388968ce584dad43397efeca/jetified-easypermissions-1.1.3/AndroidManifest.xml:11:5-17:19
+MERGED from [gun0912.ted:tedpermission:2.2.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/e417541634f5f4a7d7d977975af4915f/jetified-tedpermission-2.2.3/AndroidManifest.xml:9:5-15:19
+MERGED from [gun0912.ted:tedpermission:2.2.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/e417541634f5f4a7d7d977975af4915f/jetified-tedpermission-2.2.3/AndroidManifest.xml:9:5-15:19
+MERGED from [androidx.core:core:1.3.1] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/8dbd859d1cd89239b42e7382b4fc40d7/core-1.3.1/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.1] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/8dbd859d1cd89239b42e7382b4fc40d7/core-1.3.1/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/1b49f6b12087442447a2c9046372b97f/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/1b49f6b12087442447a2c9046372b97f/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.3.1] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/ff37b710ecf84191a2687617c776753e/core-1.3.1/AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.3.1] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/8dbd859d1cd89239b42e7382b4fc40d7/core-1.3.1/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:25:9-35
+		ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:25:9-35
 	android:label
-		ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:23:9-41
+		ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:23:9-41
 	android:roundIcon
-		ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:24:9-54
+		ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:24:9-54
 	android:icon
-		ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:22:9-43
+		ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:22:9-43
 	android:allowBackup
-		ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:21:9-35
+		ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:21:9-35
 	android:theme
-		ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:26:9-50
+		ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:26:9-50
 activity#com.W3Dev.w3devcalling.CompleteFunctionalityActivity
-ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:27:9-76
+ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:27:9-76
 	android:name
-		ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:27:19-64
+		ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:27:19-64
 activity#com.W3Dev.w3devcalling.cameraRenderActivity
-ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:28:9-58
+ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:28:9-58
 	android:name
-		ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:28:19-55
+		ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:28:19-55
 activity#com.W3Dev.w3devcalling.MainActivity
-ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:29:9-35:20
+ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:29:9-35:20
 	android:name
-		ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:29:19-47
+		ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:29:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:30:13-34:29
+ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:30:13-34:29
 action#android.intent.action.MAIN
-ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:31:17-69
+ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:31:17-69
 	android:name
-		ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:31:25-66
+		ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:31:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:33:17-77
+ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:33:17-77
 	android:name
-		ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml:33:27-74
+		ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml:33:27-74
 uses-sdk
-INJECTED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml
-INJECTED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml
-MERGED from [com.google.android.material:material:1.2.1] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/b988cdf40af7cdf3e0317011f8e5bfe7/material-1.2.1/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.2.1] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/b988cdf40af7cdf3e0317011f8e5bfe7/material-1.2.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/ec4dd897d4037390d3cac18fc3984d5c/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/ec4dd897d4037390d3cac18fc3984d5c/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
-MERGED from [pub.devrel:easypermissions:1.1.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/5b6285a1f40f04ebdd86f13951154976/jetified-easypermissions-1.1.3/AndroidManifest.xml:7:5-9:41
-MERGED from [pub.devrel:easypermissions:1.1.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/5b6285a1f40f04ebdd86f13951154976/jetified-easypermissions-1.1.3/AndroidManifest.xml:7:5-9:41
-MERGED from [gun0912.ted:tedpermission:2.2.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/4536fd215d7f20494bf01a76476349b0/jetified-tedpermission-2.2.3/AndroidManifest.xml:5:5-7:41
-MERGED from [gun0912.ted:tedpermission:2.2.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/4536fd215d7f20494bf01a76476349b0/jetified-tedpermission-2.2.3/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/a527ad4f532df6b258c428a911debd89/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/a527ad4f532df6b258c428a911debd89/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/0ccf7d1f41f08a9fbac49eb844da8039/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/0ccf7d1f41f08a9fbac49eb844da8039/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/312f83425808e5212ec527eb40bbd563/rxandroid-2.0.1/AndroidManifest.xml:19:5-43
-MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/312f83425808e5212ec527eb40bbd563/rxandroid-2.0.1/AndroidManifest.xml:19:5-43
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/9d4053b57d170770335ff225b77d62ba/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/9d4053b57d170770335ff225b77d62ba/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/85bbcabe709b3efb54d74d18f7977a81/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/85bbcabe709b3efb54d74d18f7977a81/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/0d889d0bca3861f2da10545da7c4132e/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/0d889d0bca3861f2da10545da7c4132e/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/935c1eb103e362446c63f75dbc889f07/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/935c1eb103e362446c63f75dbc889f07/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/045ecda214dc48a7b6794acabc444ee0/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/045ecda214dc48a7b6794acabc444ee0/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/142e93d95da0344235eb82ee7f05a108/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/142e93d95da0344235eb82ee7f05a108/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/ef9c997edfa62b91e0d370b598210169/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/ef9c997edfa62b91e0d370b598210169/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/0d4494bee4a56a30051f107c7a8e3c94/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/0d4494bee4a56a30051f107c7a8e3c94/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.2.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/04d9fa679ff5e7b592ee980c8b38c907/transition-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.2.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/04d9fa679ff5e7b592ee980c8b38c907/transition-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/715ac09ebebe6f055fd8c27935b09c71/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/715ac09ebebe6f055fd8c27935b09c71/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/24a7c4b656e8849fce6b1ec879de45c1/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/24a7c4b656e8849fce6b1ec879de45c1/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.media:media:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/b92201a39ca35c5371c82710bc662dc7/media-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/b92201a39ca35c5371c82710bc662dc7/media-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/bdfbb38555a741f74d62c90cf85e0b35/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/bdfbb38555a741f74d62c90cf85e0b35/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/b437c8e4cf053fd87bc8836cb75ffd62/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/b437c8e4cf053fd87bc8836cb75ffd62/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/a8f36a69659c55a007f35cfecb9dcfc6/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/a8f36a69659c55a007f35cfecb9dcfc6/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/7b541f4196cf846f7dd467165838e072/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/7b541f4196cf846f7dd467165838e072/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/28b4aa78b7d7c16150815353e8235a9e/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/28b4aa78b7d7c16150815353e8235a9e/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/30364a4e1d148d54a282aaa580ec2e4d/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/30364a4e1d148d54a282aaa580ec2e4d/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/dcd86c4e1bc7b82faa13cfa95eb5ce30/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/dcd86c4e1bc7b82faa13cfa95eb5ce30/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/d38c28a7a4bd66deb92fbaacca82413e/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/d38c28a7a4bd66deb92fbaacca82413e/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/18aae0e1403cb9536d945989108c14a5/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/18aae0e1403cb9536d945989108c14a5/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.3.1] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/ff37b710ecf84191a2687617c776753e/core-1.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.3.1] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/ff37b710ecf84191a2687617c776753e/core-1.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/94115104efb23786ea53cd1a51dde3af/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/94115104efb23786ea53cd1a51dde3af/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/9b14025540e1c0e0278fee415366684e/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/9b14025540e1c0e0278fee415366684e/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/3e9337dfc055970a9422bc379c54bdcb/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/3e9337dfc055970a9422bc379c54bdcb/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/48eb1e8d8b8ad7006b2f3cf24b65d608/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/48eb1e8d8b8ad7006b2f3cf24b65d608/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/884715ee5d4759e99f0bf4b3058e7279/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/884715ee5d4759e99f0bf4b3058e7279/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/eb25aa6fb92793269536cebf4ca0a993/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/eb25aa6fb92793269536cebf4ca0a993/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/cbfdfe08c267cf71c6eae9047a7b16ca/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/cbfdfe08c267cf71c6eae9047a7b16ca/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/335a1a6eb49eac2eab041286c81584a5/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/335a1a6eb49eac2eab041286c81584a5/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/31a15a162cd7bb718e862c0cc13bfa61/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/31a15a162cd7bb718e862c0cc13bfa61/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/af090a78eaea8296976d6555a3a135f2/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/af090a78eaea8296976d6555a3a135f2/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/4277c449ae4e7defb11901a027a49277/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/4277c449ae4e7defb11901a027a49277/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/01339aeadc2379d14234ec1725fb1d1d/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/01339aeadc2379d14234ec1725fb1d1d/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
-INJECTED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml
-INJECTED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml
+INJECTED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml
+INJECTED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.2.1] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/7e5b6cf970b6ee458e94f0de4554e685/material-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.2.1] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/7e5b6cf970b6ee458e94f0de4554e685/material-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/73327337a728e12c5c3cdecdb4b7e327/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/73327337a728e12c5c3cdecdb4b7e327/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
+MERGED from [pub.devrel:easypermissions:1.1.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/90cfbe2c388968ce584dad43397efeca/jetified-easypermissions-1.1.3/AndroidManifest.xml:7:5-9:41
+MERGED from [pub.devrel:easypermissions:1.1.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/90cfbe2c388968ce584dad43397efeca/jetified-easypermissions-1.1.3/AndroidManifest.xml:7:5-9:41
+MERGED from [gun0912.ted:tedpermission:2.2.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/e417541634f5f4a7d7d977975af4915f/jetified-tedpermission-2.2.3/AndroidManifest.xml:5:5-7:41
+MERGED from [gun0912.ted:tedpermission:2.2.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/e417541634f5f4a7d7d977975af4915f/jetified-tedpermission-2.2.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/44b21666f861b2b454523071d69d07d7/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/44b21666f861b2b454523071d69d07d7/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/d9c8547f43bfc98a7c33c7a922993a2d/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/d9c8547f43bfc98a7c33c7a922993a2d/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/eee3cb7347c6e95c704a40db2a35f6ca/jetified-rxandroid-2.0.1/AndroidManifest.xml:19:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/eee3cb7347c6e95c704a40db2a35f6ca/jetified-rxandroid-2.0.1/AndroidManifest.xml:19:5-43
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/e74634e20d1ec32457b9cc4f401ffea1/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/e74634e20d1ec32457b9cc4f401ffea1/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/082141e7a08ecc0568dc277abb6b2eb2/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/082141e7a08ecc0568dc277abb6b2eb2/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/3b91b187821fc6e4f6300506297b769e/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/3b91b187821fc6e4f6300506297b769e/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/2caca0665cfc150845d481add640d717/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/2caca0665cfc150845d481add640d717/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/78be485c09b159ccd6437b5ce26410a0/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/78be485c09b159ccd6437b5ce26410a0/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/90ad92d9d7e544d3d7a553e07e526cde/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/90ad92d9d7e544d3d7a553e07e526cde/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/6a8e87f523c55e5b29d9c4a3f69e8c47/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/6a8e87f523c55e5b29d9c4a3f69e8c47/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/5fcf58f467c61301f7dd22175ddca6ba/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/5fcf58f467c61301f7dd22175ddca6ba/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/b154dbc73687587a7ce14e229cc71d1e/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/b154dbc73687587a7ce14e229cc71d1e/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/9d3d448a3878af78f8d5e2175d6f4332/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/9d3d448a3878af78f8d5e2175d6f4332/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/a5f1739a336003917307af1b7a40c6ec/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/a5f1739a336003917307af1b7a40c6ec/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/7f64c1045ae362310688a10253c2a109/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/7f64c1045ae362310688a10253c2a109/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/9b319768499df63b1d0933a3c55ff3e7/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/9b319768499df63b1d0933a3c55ff3e7/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/921fb1c1970f14455564b73ac43ed75b/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/921fb1c1970f14455564b73ac43ed75b/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/19ba019dbf22e650e8e95d7507462ba8/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/19ba019dbf22e650e8e95d7507462ba8/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/1c867de8727b52b88cec2ad3aed090ac/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/1c867de8727b52b88cec2ad3aed090ac/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/76a75c6502d93031e6f1d463ce4e8940/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/76a75c6502d93031e6f1d463ce4e8940/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/9726f16beb884e69c8392eb74d42aa95/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/9726f16beb884e69c8392eb74d42aa95/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/4d3225ea5d57f620bf5356e2a6f066d6/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/4d3225ea5d57f620bf5356e2a6f066d6/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/f9976ae113f170d60bfcc789044f411d/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/f9976ae113f170d60bfcc789044f411d/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/b754b2dac55e2d093f3d16fae3e2b72a/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/b754b2dac55e2d093f3d16fae3e2b72a/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.3.1] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/8dbd859d1cd89239b42e7382b4fc40d7/core-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.1] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/8dbd859d1cd89239b42e7382b4fc40d7/core-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/1b49f6b12087442447a2c9046372b97f/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/1b49f6b12087442447a2c9046372b97f/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/07966c8c4706ffeaf638d555f4c86fb0/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/07966c8c4706ffeaf638d555f4c86fb0/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/41c41c2fbc05e9a19fa443c48f799c3d/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/41c41c2fbc05e9a19fa443c48f799c3d/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/634f2f03e50a0eb4514a8d791ceb2f13/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/634f2f03e50a0eb4514a8d791ceb2f13/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/054d779a91766207571d826869795163/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/054d779a91766207571d826869795163/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/a5508913c832bc0c65ebd72baf7fb6d8/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/a5508913c832bc0c65ebd72baf7fb6d8/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/384d88a73e203b8300027f46f36e4e61/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/384d88a73e203b8300027f46f36e4e61/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/ac846bd1991b3727d0d9b0a2719ca5c8/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/ac846bd1991b3727d0d9b0a2719ca5c8/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/5e93b9f41c3983a761aa6e19533f24ec/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/5e93b9f41c3983a761aa6e19533f24ec/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/1435e0b5216c3fd72a2d6579c29d3ee1/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/1435e0b5216c3fd72a2d6579c29d3ee1/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/035487676af6db782633ffbdc1d98b21/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/035487676af6db782633ffbdc1d98b21/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/3fd5b4b866d23b43b0e15439a0ee99e7/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/3fd5b4b866d23b43b0e15439a0ee99e7/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml
+INJECTED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml
-		ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml
+		ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml
-		ADDED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/hangsai/AndroidStudioProjects/W3DevCalling/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml
+		ADDED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/hangsai/AndroidStudioProjects/MyWebRTC/app/src/main/AndroidManifest.xml
 activity#pub.devrel.easypermissions.AppSettingsDialogHolderActivity
-ADDED from [pub.devrel:easypermissions:1.1.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/5b6285a1f40f04ebdd86f13951154976/jetified-easypermissions-1.1.3/AndroidManifest.xml:12:9-16:66
+ADDED from [pub.devrel:easypermissions:1.1.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/90cfbe2c388968ce584dad43397efeca/jetified-easypermissions-1.1.3/AndroidManifest.xml:12:9-16:66
 	android:label
-		ADDED from [pub.devrel:easypermissions:1.1.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/5b6285a1f40f04ebdd86f13951154976/jetified-easypermissions-1.1.3/AndroidManifest.xml:15:13-29
+		ADDED from [pub.devrel:easypermissions:1.1.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/90cfbe2c388968ce584dad43397efeca/jetified-easypermissions-1.1.3/AndroidManifest.xml:15:13-29
 	android:exported
-		ADDED from [pub.devrel:easypermissions:1.1.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/5b6285a1f40f04ebdd86f13951154976/jetified-easypermissions-1.1.3/AndroidManifest.xml:14:13-37
+		ADDED from [pub.devrel:easypermissions:1.1.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/90cfbe2c388968ce584dad43397efeca/jetified-easypermissions-1.1.3/AndroidManifest.xml:14:13-37
 	android:theme
-		ADDED from [pub.devrel:easypermissions:1.1.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/5b6285a1f40f04ebdd86f13951154976/jetified-easypermissions-1.1.3/AndroidManifest.xml:16:13-63
+		ADDED from [pub.devrel:easypermissions:1.1.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/90cfbe2c388968ce584dad43397efeca/jetified-easypermissions-1.1.3/AndroidManifest.xml:16:13-63
 	android:name
-		ADDED from [pub.devrel:easypermissions:1.1.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/5b6285a1f40f04ebdd86f13951154976/jetified-easypermissions-1.1.3/AndroidManifest.xml:13:13-86
+		ADDED from [pub.devrel:easypermissions:1.1.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/90cfbe2c388968ce584dad43397efeca/jetified-easypermissions-1.1.3/AndroidManifest.xml:13:13-86
 activity#com.gun0912.tedpermission.TedPermissionActivity
-ADDED from [gun0912.ted:tedpermission:2.2.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/4536fd215d7f20494bf01a76476349b0/jetified-tedpermission-2.2.3/AndroidManifest.xml:10:9-14:67
+ADDED from [gun0912.ted:tedpermission:2.2.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/e417541634f5f4a7d7d977975af4915f/jetified-tedpermission-2.2.3/AndroidManifest.xml:10:9-14:67
 	android:screenOrientation
-		ADDED from [gun0912.ted:tedpermission:2.2.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/4536fd215d7f20494bf01a76476349b0/jetified-tedpermission-2.2.3/AndroidManifest.xml:13:13-52
+		ADDED from [gun0912.ted:tedpermission:2.2.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/e417541634f5f4a7d7d977975af4915f/jetified-tedpermission-2.2.3/AndroidManifest.xml:13:13-52
 	android:configChanges
-		ADDED from [gun0912.ted:tedpermission:2.2.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/4536fd215d7f20494bf01a76476349b0/jetified-tedpermission-2.2.3/AndroidManifest.xml:12:13-144
+		ADDED from [gun0912.ted:tedpermission:2.2.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/e417541634f5f4a7d7d977975af4915f/jetified-tedpermission-2.2.3/AndroidManifest.xml:12:13-144
 	android:theme
-		ADDED from [gun0912.ted:tedpermission:2.2.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/4536fd215d7f20494bf01a76476349b0/jetified-tedpermission-2.2.3/AndroidManifest.xml:14:13-64
+		ADDED from [gun0912.ted:tedpermission:2.2.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/e417541634f5f4a7d7d977975af4915f/jetified-tedpermission-2.2.3/AndroidManifest.xml:14:13-64
 	android:name
-		ADDED from [gun0912.ted:tedpermission:2.2.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/4536fd215d7f20494bf01a76476349b0/jetified-tedpermission-2.2.3/AndroidManifest.xml:11:13-75
+		ADDED from [gun0912.ted:tedpermission:2.2.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/e417541634f5f4a7d7d977975af4915f/jetified-tedpermission-2.2.3/AndroidManifest.xml:11:13-75

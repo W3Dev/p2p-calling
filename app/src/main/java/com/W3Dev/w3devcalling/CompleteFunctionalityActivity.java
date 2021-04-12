@@ -1,14 +1,12 @@
 package com.W3Dev.w3devcalling;
 
-import androidx.appcompat.app.AppCompatActivity;
 
+import androidx.appcompat.app.AppCompatActivity;
 import android.Manifest;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.WindowManager;
-
 import com.W3Dev.w3devcalling.web_rtc.AppRTCAudioManager;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.webrtc.AudioSource;
@@ -29,16 +27,13 @@ import org.webrtc.VideoCapturer;
 import org.webrtc.VideoRenderer;
 import org.webrtc.VideoSource;
 import org.webrtc.VideoTrack;
-
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Set;
-
 import io.socket.client.IO;
 import io.socket.client.Socket;
 import pub.devrel.easypermissions.AfterPermissionGranted;
 import pub.devrel.easypermissions.EasyPermissions;
-
 import static io.socket.client.Socket.EVENT_CONNECT;
 import static io.socket.client.Socket.EVENT_DISCONNECT;
 import static org.webrtc.SessionDescription.Type.ANSWER;
