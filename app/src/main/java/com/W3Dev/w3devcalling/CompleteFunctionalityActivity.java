@@ -40,7 +40,7 @@ import static org.webrtc.SessionDescription.Type.ANSWER;
 import static org.webrtc.SessionDescription.Type.OFFER;
 
 public class CompleteFunctionalityActivity extends AppCompatActivity {
-    private static final String TAG = "CompleteActivity";
+    private static final String TAG = "CompleteActivitycompleted";
     private static final int RC_CALL = 111;
     public static final String VIDEO_TRACK_ID = "ARDAMSv0";
     public static final int VIDEO_RESOLUTION_WIDTH = 1280;
@@ -136,6 +136,7 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
                         }
                     } else {
                         JSONObject message = (JSONObject) args[0];
+
                         Log.d(TAG, "connectToSignallingServer: got message " + message);
                         if (message.getString("type").equals("offer")) {
                             Log.d(TAG, "connectToSignallingServer: received an offer " + isInitiator + " " + isStarted);
