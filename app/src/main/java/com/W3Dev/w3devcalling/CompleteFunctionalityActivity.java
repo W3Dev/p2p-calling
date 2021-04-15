@@ -56,6 +56,8 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
     AudioSource audioSource;
     AudioTrack localAudioTrack;
     private EglBase rootEglBase;
+
+    private String TER = "hellowdone";
     private SurfaceViewRenderer surface_view1;
     private SurfaceViewRenderer surface_view2;
     private PeerConnectionFactory factory;
