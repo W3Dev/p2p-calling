@@ -14,6 +14,7 @@ before_script:
   - echo y | android-sdk-linux/tools/bin/sdkmanager "platform-tools" >/dev/null
   - echo y | android-sdk-linux/tools/bin/sdkmanager "build-tools;${ANDROID_BUILD_TOOLS}" >/dev/null
   - export ANDROID_HOME=$PWD/android-sdk-linux
+  - export GRADLE_USER_HOME=$(pwd)/.gradle
   - export PATH=$PATH:$PWD/android-sdk-linux/platform-tools/
   - chmod +x ./gradlew
   # temporarily disable checking for EPIPE error and use yes to accept all licenses
@@ -21,9 +22,15 @@ before_script:
   - yes | android-sdk-linux/tools/bin/sdkmanager --licenses
   - set -o pipefail
 
+cache:
+  key: ${CI_PROJECT_ID}
+  paths:
+  - .gradle/
+
 stages:
   - build
   - test
+  - release
 
 lintDebug:
   stage: build
@@ -42,3 +49,21 @@ debugTests:
   stage: test
   script:
     - ./gradlew -Pci --console=plain :app:testDebug
+
+assembleRelease:
+  stage: release
+  script:
+  - echo $KEYSTORE_FILE | base64 -d > my.keystore
+  - ./gradlew assembleRelease
+    -Pandroid.injected.signing.store.file=$(pwd)/my.keystore
+    -Pandroid.injected.signing.store.password=$KEYSTORE_PASSWORD
+    -Pandroid.injected.signing.key.alias=$KEY_ALIAS
+    -Pandroid.injected.signing.key.password=$KEY_PASSWORD
+  artifacts:
+    paths:
+    - app/build/outputs/apk/release
+    - CHANGELOG
+
+
+
+
