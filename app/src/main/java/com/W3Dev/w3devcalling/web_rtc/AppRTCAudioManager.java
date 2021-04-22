@@ -11,6 +11,7 @@
 package com.W3Dev.w3devcalling.web_rtc;
 
 
+import android.annotation.SuppressLint;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -243,6 +244,7 @@ public class AppRTCAudioManager {
         Log.d(TAG, "AudioManager started");
     }
 
+    @SuppressLint("WrongConstant")
     public void stop() {
         Log.d(TAG, "stop");
         ThreadUtils.checkIsOnMainThread();
@@ -259,7 +261,7 @@ public class AppRTCAudioManager {
         // Restore previously stored audio states.
         setSpeakerphoneOn(savedIsSpeakerPhoneOn);
         setMicrophoneMute(savedIsMicrophoneMute);
-        audioManager.setMode(savedAudioMode);
+        audioManager.setMode(AudioManager.MODE_INVALID);
 
         // Abandon audio focus. Gives the previous focus owner, if any, focus.
         audioManager.abandonAudioFocus(audioFocusChangeListener);
