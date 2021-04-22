@@ -60,6 +60,7 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
 
     private String TER = "hellowdone";
     private SurfaceViewRenderer surface_view1;
+
     private SurfaceViewRenderer surface_view2;
     private PeerConnectionFactory factory;
     private VideoTrack videoTrackFromCamera;
