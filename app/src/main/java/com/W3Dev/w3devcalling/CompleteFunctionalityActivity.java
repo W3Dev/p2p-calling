@@ -51,6 +51,7 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
     private boolean isInitiator;
     private boolean isChannelReady;
     private boolean isStarted;
+
     private PeerConnection peerConnection;
     private AppRTCAudioManager audioManager;
     AudioSource audioSource;
