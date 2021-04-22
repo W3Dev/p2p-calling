@@ -65,6 +65,7 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
     private SurfaceViewRenderer surface_view2;
 
     private PeerConnectionFactory factory;
+
     private VideoTrack videoTrackFromCamera;
 
     @Override
