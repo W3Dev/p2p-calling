@@ -316,6 +316,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
+        checkNetworkCondition();
         button = findViewById(R.id.button);
         button2 = findViewById(R.id.button2);
         RequestPermissions();
@@ -355,7 +356,6 @@ public class MainActivity extends AppCompatActivity {
             public void onPermissionDenied(List<String> deniedPermissions) {
                 Toast.makeText(getApplicationContext(), "Permission Denied\n" + deniedPermissions.toString() + "\nPlease grant all the permissions to move forward", Toast.LENGTH_SHORT).show();
                 RequestPermissions();
-                checkNetworkCondition();
             }
         };
         TedPermission.with(this)
