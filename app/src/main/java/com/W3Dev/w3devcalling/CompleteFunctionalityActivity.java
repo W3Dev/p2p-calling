@@ -45,28 +45,21 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
     public static final String VIDEO_TRACK_ID = "ARDAMSv0";
     public static final int VIDEO_RESOLUTION_WIDTH = 1280;
     public static final int VIDEO_RESOLUTION_HEIGHT = 720;
-
     public static final int FPS = 30;
     private Socket socket;
     MediaConstraints audioConstraints;
     private boolean isInitiator;
     private boolean isChannelReady;
     private boolean isStarted;
-
     private PeerConnection peerConnection;
     private AppRTCAudioManager audioManager;
     AudioSource audioSource;
     AudioTrack localAudioTrack;
     private EglBase rootEglBase;
-
     private String TER = "hellowdone";
     private SurfaceViewRenderer surface_view1;
-
-
     private SurfaceViewRenderer surface_view2;
-
     private PeerConnectionFactory factory;
-
     private VideoTrack videoTrackFromCamera;
 
     @Override

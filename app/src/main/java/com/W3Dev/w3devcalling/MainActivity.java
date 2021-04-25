@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkCapabilities;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -331,6 +333,16 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    private void checkNetworkCondition() {
+
+        ConnectivityManager cm = (ConnectivityManager) this.getSystemService(CONNECTIVITY_SERVICE);
+        NetworkCapabilities nc = cm.getNetworkCapabilities(cm.getActiveNetwork());
+        int downSpeed = nc.getLinkDownstreamBandwidthKbps();
+        int upSpeed = nc.getLinkUpstreamBandwidthKbps();
+        Toast.makeText(this, downSpeed, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, upSpeed, Toast.LENGTH_SHORT).show();
+    }
+
     private void RequestPermissions() {
         PermissionListener permissionlistener = new PermissionListener() {
             @Override
@@ -343,6 +355,7 @@ public class MainActivity extends AppCompatActivity {
             public void onPermissionDenied(List<String> deniedPermissions) {
                 Toast.makeText(getApplicationContext(), "Permission Denied\n" + deniedPermissions.toString() + "\nPlease grant all the permissions to move forward", Toast.LENGTH_SHORT).show();
                 RequestPermissions();
+                checkNetworkCondition();
             }
         };
         TedPermission.with(this)
