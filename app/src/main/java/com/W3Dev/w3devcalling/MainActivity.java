@@ -1,13 +1,16 @@
 package com.W3Dev.w3devcalling;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
+import android.app.Service;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkCapabilities;
 import android.os.Bundle;
+import android.os.IBinder;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
@@ -41,7 +44,9 @@ import org.webrtc.SurfaceTextureHelper;
 import org.webrtc.VideoCapturer;
 import org.webrtc.VideoSource;
 import org.webrtc.VideoTrack;
+
 import java.net.Socket;
+import java.security.Provider;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -316,10 +321,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
-        checkNetworkCondition();
         button = findViewById(R.id.button);
         button2 = findViewById(R.id.button2);
         RequestPermissions();
+        checkNetworkCondition();
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -338,10 +343,10 @@ public class MainActivity extends AppCompatActivity {
 
         ConnectivityManager cm = (ConnectivityManager) this.getSystemService(CONNECTIVITY_SERVICE);
         NetworkCapabilities nc = cm.getNetworkCapabilities(cm.getActiveNetwork());
-        int downSpeed = nc.getLinkDownstreamBandwidthKbps();
-        int upSpeed = nc.getLinkUpstreamBandwidthKbps();
-        Toast.makeText(this, downSpeed, Toast.LENGTH_SHORT).show();
-        Toast.makeText(this, upSpeed, Toast.LENGTH_SHORT).show();
+        String downSpeed = String.valueOf(nc.getLinkDownstreamBandwidthKbps());
+        String upSpeed = String.valueOf(nc.getLinkUpstreamBandwidthKbps());
+        Toast.makeText(getApplicationContext(), "The Downlink is :" + downSpeed, Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "The Uplink is :" + upSpeed, Toast.LENGTH_SHORT).show();
     }
 
     private void RequestPermissions() {
@@ -367,5 +372,7 @@ public class MainActivity extends AppCompatActivity {
                 .check();
     }
 }
+
+
 
 
