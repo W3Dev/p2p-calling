@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
 import android.app.Service;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkCapabilities;
@@ -17,6 +18,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.W3Dev.w3devcalling.background.DataChecker;
 import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.TedPermission;
 
@@ -324,7 +326,6 @@ public class MainActivity extends AppCompatActivity {
         button = findViewById(R.id.button);
         button2 = findViewById(R.id.button2);
         RequestPermissions();
-        checkNetworkCondition();
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -334,19 +335,10 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                startService(new Intent(getApplicationContext(), DataChecker.class));
                 startActivity(new Intent(getApplicationContext(), CompleteFunctionalityActivity.class));
             }
         });
-    }
-
-    private void checkNetworkCondition() {
-
-        ConnectivityManager cm = (ConnectivityManager) this.getSystemService(CONNECTIVITY_SERVICE);
-        NetworkCapabilities nc = cm.getNetworkCapabilities(cm.getActiveNetwork());
-        String downSpeed = String.valueOf(nc.getLinkDownstreamBandwidthKbps());
-        String upSpeed = String.valueOf(nc.getLinkUpstreamBandwidthKbps());
-        Toast.makeText(getApplicationContext(), "The Downlink is :" + downSpeed, Toast.LENGTH_SHORT).show();
-        Toast.makeText(getApplicationContext(), "The Uplink is :" + upSpeed, Toast.LENGTH_SHORT).show();
     }
 
     private void RequestPermissions() {
@@ -370,6 +362,12 @@ public class MainActivity extends AppCompatActivity {
                         , Manifest.permission.MODIFY_AUDIO_SETTINGS, Manifest.permission.RECORD_AUDIO, Manifest.permission.INTERNET,
                         Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.ACCESS_NETWORK_STATE, Manifest.permission.BLUETOOTH)
                 .check();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        stopService(new Intent(getApplicationContext(), DataChecker.class));
     }
 }
 
