@@ -94,6 +94,7 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
             public void onReceive(Context context, Intent intent) {
                 if (intent != null) {
                     up.setText(intent.getStringExtra("upspeed"));
+
                     dow.setText(intent.getStringExtra("downspeed"));
                 }
 
