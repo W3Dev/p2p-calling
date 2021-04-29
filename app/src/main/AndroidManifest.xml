@@ -33,6 +33,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".background.DataChecker"
+            android:enabled="true"
+            android:exported="false"
+            android:stopWithTask="true" />
+
     </application>
 
 </manifest>
