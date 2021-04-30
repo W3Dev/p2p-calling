@@ -2,11 +2,21 @@ package com.W3Dev.w3devcalling;
 
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.Manifest;
+import android.app.Activity;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.WindowManager;
+import android.widget.TextView;
+
+import com.W3Dev.w3devcalling.background.DataChecker;
 import com.W3Dev.w3devcalling.web_rtc.AppRTCAudioManager;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.webrtc.AudioSource;
@@ -27,13 +37,16 @@ import org.webrtc.VideoCapturer;
 import org.webrtc.VideoRenderer;
 import org.webrtc.VideoSource;
 import org.webrtc.VideoTrack;
+
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Set;
+
 import io.socket.client.IO;
 import io.socket.client.Socket;
 import pub.devrel.easypermissions.AfterPermissionGranted;
 import pub.devrel.easypermissions.EasyPermissions;
+
 import static io.socket.client.Socket.EVENT_CONNECT;
 import static io.socket.client.Socket.EVENT_DISCONNECT;
 import static org.webrtc.SessionDescription.Type.ANSWER;
@@ -56,11 +69,12 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
     AudioSource audioSource;
     AudioTrack localAudioTrack;
     private EglBase rootEglBase;
-    private String TER = "hellowdone";
+    private String TER = "test";
     private SurfaceViewRenderer surface_view1;
     private SurfaceViewRenderer surface_view2;
     private PeerConnectionFactory factory;
     private VideoTrack videoTrackFromCamera;
+    public TextView up, dow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,14 +83,50 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
         setContentView(R.layout.activity_complete_functionality);
         surface_view1 = findViewById(R.id.surface_view1);
         surface_view2 = findViewById(R.id.surface_view2);
+
+        up = findViewById(R.id.upty);
+        dow = findViewById(R.id.dowty);
+        //Implementing service------------------------
+
+        DataChecker.addDatatoTextView(R.id.upty, R.id.dowty, getWindow().getDecorView().getRootView());
+        BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
+            @Override
+            public void onReceive(Context context, Intent intent) {
+                if (intent != null) {
+                    up.setText(intent.getStringExtra("upspeed"));
+
+                    dow.setText(intent.getStringExtra("downspeed"));
+                }
+
+            }
+        };
+
+        this.registerReceiver(broadcastReceiver, new IntentFilter("yuy"));
+
         start();
     }
+
+    /**
+     * Called when the activity has detected the user's press of the back
+     * key. The {@link #getOnBackPressedDispatcher() OnBackPressedDispatcher} will be given a
+     * chance to handle the back button before the default behavior of
+     * {@link Activity#onBackPressed()} is invoked.
+     *
+     * @see #getOnBackPressedDispatcher()
+     */
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        stopService(new Intent(getApplicationContext(), DataChecker.class));
+    }
+
 
     @Override
     protected void onDestroy() {
         if (socket != null) {
             sendMessage("bye");
             socket.disconnect();
+            stopService(new Intent(getApplicationContext(), DataChecker.class));
         }
         super.onDestroy();
     }
