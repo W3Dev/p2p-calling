@@ -17,6 +17,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
 
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -26,6 +27,11 @@
         android:theme="@style/Theme.W3DevCalling">
         <activity android:name=".CompleteFunctionalityActivity"></activity>
         <activity android:name=".cameraRenderActivity" />
+
+        <meta-data
+            android:name="io.sentry.dsn"
+            android:value="https://68236fc9d471472cba8747b82c18f6b1@o609353.ingest.sentry.io/5746970" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,6 +39,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
 
         <service
             android:name=".background.DataChecker"

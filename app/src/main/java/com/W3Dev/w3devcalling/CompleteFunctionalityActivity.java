@@ -9,6 +9,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.media.MediaCodec;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.WindowManager;
@@ -27,6 +28,7 @@ import org.webrtc.CameraEnumerator;
 import org.webrtc.DataChannel;
 import org.webrtc.EglBase;
 import org.webrtc.IceCandidate;
+import org.webrtc.MediaCodecVideoEncoder;
 import org.webrtc.MediaConstraints;
 import org.webrtc.MediaStream;
 import org.webrtc.PeerConnection;
@@ -42,6 +44,7 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Set;
 
+import io.sentry.Sentry;
 import io.socket.client.IO;
 import io.socket.client.Socket;
 import pub.devrel.easypermissions.AfterPermissionGranted;
@@ -79,6 +82,7 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Sentry.captureMessage("testing SDK setup");
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_complete_functionality);
         surface_view1 = findViewById(R.id.surface_view1);
@@ -131,6 +135,7 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
         super.onDestroy();
     }
 
+
     @AfterPermissionGranted(RC_CALL)
     private void start() {
         String[] perms = {Manifest.permission.CAMERA, Manifest.permission.RECORD_AUDIO};
@@ -146,7 +151,9 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
             initializePeerConnections();
 
             startStreamingVideo();
+
         } else {
+
             EasyPermissions.requestPermissions(this, "Need some permissions", RC_CALL, perms);
         }
     }

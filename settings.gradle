@@ -1,2 +1,3 @@
+include ':W3DevCallingPlugin'
 include ':app'
 rootProject.name = "W3DevCalling"
