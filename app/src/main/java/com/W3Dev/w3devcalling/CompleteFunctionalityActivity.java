@@ -79,6 +79,7 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
     private VideoTrack videoTrackFromCamera;
     public TextView up, dow;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -158,6 +159,7 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
         }
     }
 
+
     private void connectToSignallingServer() {
         try {
             socket = IO.socket("https://salty-sea-26559.herokuapp.com/");
@@ -226,6 +228,7 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
         }
     }
 
+
     private void doAnswer() {
         peerConnection.createAnswer(new SimpleSdpObserver() {
             @Override
@@ -243,6 +246,7 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
         }, new MediaConstraints());
     }
 
+
     private void maybeStart() {
         Log.d(TAG, "maybeStart: " + isStarted + " " + isChannelReady);
         if (!isStarted && isChannelReady) {
@@ -252,6 +256,7 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
             }
         }
     }
+
 
     private void doCall() {
         MediaConstraints sdpMediaConstraints = new MediaConstraints();
@@ -273,20 +278,12 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
         }, sdpMediaConstraints);
     }
 
+
     private void sendMessage(Object message) {
         socket.emit("message", message);
     }
 
-    private void initializeSurfaceViews() {
-        rootEglBase = EglBase.create();
-        surface_view1.init(rootEglBase.getEglBaseContext(), null);
-        surface_view1.setEnableHardwareScaler(true);
-        surface_view1.setMirror(true);
 
-        surface_view2.init(rootEglBase.getEglBaseContext(), null);
-        surface_view2.setEnableHardwareScaler(true);
-        surface_view2.setMirror(true);
-    }
 
     private void initializePeerConnectionFactory() {
         PeerConnectionFactory.initializeAndroidGlobals(this, true, true, true);
@@ -294,40 +291,12 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
         factory.setVideoHwAccelerationOptions(rootEglBase.getEglBaseContext(), rootEglBase.getEglBaseContext());
     }
 
-    private void createVideoTrackFromCameraAndShowIt() {
-        audioConstraints = new MediaConstraints();
-        VideoCapturer videoCapturer = createVideoCapturer();
-        VideoSource videoSource = factory.createVideoSource(videoCapturer);
-        videoCapturer.startCapture(VIDEO_RESOLUTION_WIDTH, VIDEO_RESOLUTION_HEIGHT, FPS);
 
-        videoTrackFromCamera = factory.createVideoTrack(VIDEO_TRACK_ID, videoSource);
-        videoTrackFromCamera.setEnabled(true);
-        videoTrackFromCamera.addRenderer(new VideoRenderer(surface_view1));
-
-        audioManager = AppRTCAudioManager.create(this);
-        audioManager.start(this::onAudioManagerDevicesChanged);
-
-
-        audioSource = factory.createAudioSource(audioConstraints);
-        localAudioTrack = factory.createAudioTrack("101", audioSource);
-    }
-
-    private void onAudioManagerDevicesChanged(
-            final AppRTCAudioManager.AudioDevice device, final Set<AppRTCAudioManager.AudioDevice> availableDevices) {
-        // TODO(henrika): add callback handler.
-    }
 
     private void initializePeerConnections() {
         peerConnection = createPeerConnection(factory);
     }
 
-    private void startStreamingVideo() {
-        MediaStream mediaStream = factory.createLocalMediaStream("ARDAMS");
-        mediaStream.addTrack(videoTrackFromCamera);
-        mediaStream.addTrack(localAudioTrack);
-        peerConnection.addStream(mediaStream);
-        sendMessage("got user media");
-    }
 
     private PeerConnection createPeerConnection(PeerConnectionFactory factory) {
         ArrayList<PeerConnection.IceServer> iceServers = new ArrayList<>();
@@ -408,6 +377,54 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
         return factory.createPeerConnection(rtcConfig, pcConstraints, pcObserver);
     }
 
+
+    private void initializeSurfaceViews() {
+        rootEglBase = EglBase.create();
+        surface_view1.init(rootEglBase.getEglBaseContext(), null);
+        surface_view1.setEnableHardwareScaler(true);
+        surface_view1.setMirror(true);
+
+        surface_view2.init(rootEglBase.getEglBaseContext(), null);
+        surface_view2.setEnableHardwareScaler(true);
+        surface_view2.setMirror(true);
+    }
+
+
+    private void createVideoTrackFromCameraAndShowIt() {
+        audioConstraints = new MediaConstraints();
+        VideoCapturer videoCapturer = createVideoCapturer();
+        VideoSource videoSource = factory.createVideoSource(videoCapturer);
+        videoCapturer.startCapture(VIDEO_RESOLUTION_WIDTH, VIDEO_RESOLUTION_HEIGHT, FPS);
+
+        videoTrackFromCamera = factory.createVideoTrack(VIDEO_TRACK_ID, videoSource);
+        videoTrackFromCamera.setEnabled(true);
+        videoTrackFromCamera.addRenderer(new VideoRenderer(surface_view1));
+
+        audioManager = AppRTCAudioManager.create(this);
+        audioManager.start(this::onAudioManagerDevicesChanged);
+
+
+        audioSource = factory.createAudioSource(audioConstraints);
+        localAudioTrack = factory.createAudioTrack("101", audioSource);
+    }
+
+
+    private void onAudioManagerDevicesChanged(
+            final AppRTCAudioManager.AudioDevice device,
+            final Set<AppRTCAudioManager.AudioDevice> availableDevices) {
+        // TODO(henrika): add callback handler.
+    }
+
+
+    private void startStreamingVideo() {
+        MediaStream mediaStream = factory.createLocalMediaStream("ARDAMS");
+        mediaStream.addTrack(videoTrackFromCamera);
+        mediaStream.addTrack(localAudioTrack);
+        peerConnection.addStream(mediaStream);
+        sendMessage("got user media");
+    }
+
+
     private VideoCapturer createVideoCapturer() {
         VideoCapturer videoCapturer;
         if (useCamera2()) {
@@ -417,6 +434,7 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
         }
         return videoCapturer;
     }
+
 
     private VideoCapturer createCameraCapturer(CameraEnumerator enumerator) {
         final String[] deviceNames = enumerator.getDeviceNames();
@@ -443,6 +461,7 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
 
         return null;
     }
+
 
     private boolean useCamera2() {
         return Camera2Enumerator.isSupported(this);
