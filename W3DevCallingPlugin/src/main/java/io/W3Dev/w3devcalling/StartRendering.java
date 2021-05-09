@@ -1,27 +1,21 @@
 package io.W3Dev.w3devcalling;
 
 import android.content.Context;
-import android.provider.MediaStore;
-
 import com.W3Dev.w3devcalling.web_rtc.AppRTCAudioManager;
-
 import org.webrtc.AudioSource;
 import org.webrtc.AudioTrack;
-import org.webrtc.Camera1Enumerator;
-import org.webrtc.Camera2Enumerator;
-import org.webrtc.CameraEnumerator;
 import org.webrtc.MediaConstraints;
 import org.webrtc.MediaStream;
 import org.webrtc.PeerConnection;
 import org.webrtc.PeerConnectionFactory;
 import org.webrtc.VideoCapturer;
-import org.webrtc.VideoRenderer;
 import org.webrtc.VideoSource;
 import org.webrtc.VideoTrack;
 
 import java.util.Set;
 
 public class StartRendering {
+
 
     // MediaConstraints audioConstraints;
     public static final String VIDEO_TRACK_ID = "ARDAMSv0";
