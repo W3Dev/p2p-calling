@@ -1,23 +1,18 @@
 package com.W3Dev.w3devcalling;
 
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.Manifest;
 import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.media.MediaCodec;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.WindowManager;
 import android.widget.TextView;
-
 import com.W3Dev.w3devcalling.background.DataChecker;
 import com.W3Dev.w3devcalling.web_rtc.AppRTCAudioManager;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.webrtc.AudioSource;
@@ -28,7 +23,6 @@ import org.webrtc.CameraEnumerator;
 import org.webrtc.DataChannel;
 import org.webrtc.EglBase;
 import org.webrtc.IceCandidate;
-import org.webrtc.MediaCodecVideoEncoder;
 import org.webrtc.MediaConstraints;
 import org.webrtc.MediaStream;
 import org.webrtc.PeerConnection;
@@ -39,23 +33,21 @@ import org.webrtc.VideoCapturer;
 import org.webrtc.VideoRenderer;
 import org.webrtc.VideoSource;
 import org.webrtc.VideoTrack;
-
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Set;
-
 import io.sentry.Sentry;
 import io.socket.client.IO;
 import io.socket.client.Socket;
 import pub.devrel.easypermissions.AfterPermissionGranted;
 import pub.devrel.easypermissions.EasyPermissions;
-
 import static io.socket.client.Socket.EVENT_CONNECT;
 import static io.socket.client.Socket.EVENT_DISCONNECT;
 import static org.webrtc.SessionDescription.Type.ANSWER;
 import static org.webrtc.SessionDescription.Type.OFFER;
 
 public class CompleteFunctionalityActivity extends AppCompatActivity {
+
     private static final String TAG = "CompleteActivitycompleted";
     private static final int RC_CALL = 111;
     public static final String VIDEO_TRACK_ID = "ARDAMSv0";
@@ -466,4 +458,5 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
     private boolean useCamera2() {
         return Camera2Enumerator.isSupported(this);
     }
+
 }

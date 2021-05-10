@@ -17,7 +17,6 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -25,7 +24,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.W3DevCalling">
-        <activity android:name=".CompleteFunctionalityActivity"></activity>
+        <activity android:name=".CompleteActivityPlugin"></activity>
+        <activity android:name=".CompleteFunctionalityActivity" />
         <activity android:name=".cameraRenderActivity" />
 
         <meta-data
@@ -40,13 +40,11 @@
             </intent-filter>
         </activity>
 
-
         <service
             android:name=".background.DataChecker"
             android:enabled="true"
             android:exported="false"
             android:stopWithTask="true" />
-
     </application>
 
 </manifest>
