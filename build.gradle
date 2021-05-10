@@ -17,8 +17,14 @@ buildscript {
 
 allprojects {
     repositories {
+        maven {
+            url "https://jitpack.io"
+            credentials { username authToken }
+        }
         google()
         jcenter()
+
+
     }
 }
 
