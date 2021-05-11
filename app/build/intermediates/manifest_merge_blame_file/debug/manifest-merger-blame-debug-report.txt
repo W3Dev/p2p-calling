@@ -5,7 +5,7 @@
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="29"
+8        android:minSdkVersion="25"
 8-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="30" />
 9-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml
@@ -64,89 +64,90 @@
 33-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:24:9-54
 34        android:supportsRtl="true"
 34-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:25:9-35
-35        android:theme="@style/Theme.W3DevCalling" >
-35-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:26:9-50
-36        <activity android:name="com.W3Dev.w3devcalling.CompleteActivityPlugin" />
-36-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:27:9-69
-36-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:27:19-57
-37        <activity android:name="com.W3Dev.w3devcalling.CompleteFunctionalityActivity" />
-37-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:28:9-67
-37-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:28:19-64
-38        <activity android:name="com.W3Dev.w3devcalling.cameraRenderActivity" />
-38-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:29:9-58
-38-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:29:19-55
-39
-40        <meta-data
-40-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:31:9-33:105
-41            android:name="io.sentry.dsn"
-41-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:32:13-41
-42            android:value="https://68236fc9d471472cba8747b82c18f6b1@o609353.ingest.sentry.io/5746970" />
-42-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:33:13-102
-43
-44        <activity android:name="com.W3Dev.w3devcalling.MainActivity" >
-44-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:35:9-41:20
-44-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:35:19-47
-45            <intent-filter>
-45-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:36:13-40:29
-46                <action android:name="android.intent.action.MAIN" />
-46-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:37:17-69
-46-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:37:25-66
-47
-48                <category android:name="android.intent.category.LAUNCHER" />
-48-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:39:17-77
-48-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:39:27-74
-49            </intent-filter>
-50        </activity>
-51
-52        <service
-52-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:43:9-47:43
-53            android:name="com.W3Dev.w3devcalling.background.DataChecker"
-53-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:44:13-51
-54            android:enabled="true"
-54-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:45:13-35
-55            android:exported="false"
-55-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:46:13-37
-56            android:stopWithTask="true" />
-56-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:47:13-40
-57
-58        <activity
-58-->[pub.devrel:easypermissions:1.1.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/75f597e38f6064799faa442de4429b72/jetified-easypermissions-1.1.3/AndroidManifest.xml:12:9-16:66
-59            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
-59-->[pub.devrel:easypermissions:1.1.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/75f597e38f6064799faa442de4429b72/jetified-easypermissions-1.1.3/AndroidManifest.xml:13:13-86
-60            android:exported="false"
-60-->[pub.devrel:easypermissions:1.1.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/75f597e38f6064799faa442de4429b72/jetified-easypermissions-1.1.3/AndroidManifest.xml:14:13-37
-61            android:label=""
-61-->[pub.devrel:easypermissions:1.1.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/75f597e38f6064799faa442de4429b72/jetified-easypermissions-1.1.3/AndroidManifest.xml:15:13-29
-62            android:theme="@style/EasyPermissions.Transparent" />
-62-->[pub.devrel:easypermissions:1.1.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/75f597e38f6064799faa442de4429b72/jetified-easypermissions-1.1.3/AndroidManifest.xml:16:13-63
-63        <activity
-63-->[gun0912.ted:tedpermission:2.2.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/ff52fd2b4599409f9f264c2018500967/jetified-tedpermission-2.2.3/AndroidManifest.xml:10:9-14:67
-64            android:name="com.gun0912.tedpermission.TedPermissionActivity"
-64-->[gun0912.ted:tedpermission:2.2.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/ff52fd2b4599409f9f264c2018500967/jetified-tedpermission-2.2.3/AndroidManifest.xml:11:13-75
-65            android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|screenLayout|fontScale|uiMode|orientation|screenSize|layoutDirection"
-65-->[gun0912.ted:tedpermission:2.2.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/ff52fd2b4599409f9f264c2018500967/jetified-tedpermission-2.2.3/AndroidManifest.xml:12:13-144
-66            android:screenOrientation="unspecified"
-66-->[gun0912.ted:tedpermission:2.2.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/ff52fd2b4599409f9f264c2018500967/jetified-tedpermission-2.2.3/AndroidManifest.xml:13:13-52
-67            android:theme="@style/Theme.Transparent.Permission" /> <!-- 'android:authorities' must be unique in the device, across all apps -->
-67-->[gun0912.ted:tedpermission:2.2.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/ff52fd2b4599409f9f264c2018500967/jetified-tedpermission-2.2.3/AndroidManifest.xml:14:13-64
-68        <provider
-68-->[io.sentry:sentry-android-core:4.3.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/d5e97be64c6b506a58cb9397170b8216/jetified-sentry-android-core-4.3.0/AndroidManifest.xml:16:9-19:40
-69            android:name="io.sentry.android.core.SentryInitProvider"
-69-->[io.sentry:sentry-android-core:4.3.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/d5e97be64c6b506a58cb9397170b8216/jetified-sentry-android-core-4.3.0/AndroidManifest.xml:17:13-69
-70            android:authorities="com.W3Dev.w3devcalling.SentryInitProvider"
-70-->[io.sentry:sentry-android-core:4.3.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/d5e97be64c6b506a58cb9397170b8216/jetified-sentry-android-core-4.3.0/AndroidManifest.xml:18:13-70
-71            android:exported="false" />
-71-->[io.sentry:sentry-android-core:4.3.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/d5e97be64c6b506a58cb9397170b8216/jetified-sentry-android-core-4.3.0/AndroidManifest.xml:19:13-37
-72        <provider
-72-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/07affe4d4ee75ee78ff2e4c9dedbaa4e/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
-73            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-73-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/07affe4d4ee75ee78ff2e4c9dedbaa4e/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
-74            android:authorities="com.W3Dev.w3devcalling.lifecycle-process"
-74-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/07affe4d4ee75ee78ff2e4c9dedbaa4e/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
-75            android:exported="false"
-75-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/07affe4d4ee75ee78ff2e4c9dedbaa4e/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
-76            android:multiprocess="true" />
-76-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/07affe4d4ee75ee78ff2e4c9dedbaa4e/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
-77    </application>
-78
-79</manifest>
+35        android:testOnly="true"
+36        android:theme="@style/Theme.W3DevCalling" >
+36-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:26:9-50
+37        <activity android:name="com.W3Dev.w3devcalling.CompleteActivityPlugin" />
+37-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:27:9-69
+37-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:27:19-57
+38        <activity android:name="com.W3Dev.w3devcalling.CompleteFunctionalityActivity" />
+38-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:28:9-67
+38-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:28:19-64
+39        <activity android:name="com.W3Dev.w3devcalling.cameraRenderActivity" />
+39-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:29:9-58
+39-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:29:19-55
+40
+41        <meta-data
+41-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:31:9-33:105
+42            android:name="io.sentry.dsn"
+42-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:32:13-41
+43            android:value="https://68236fc9d471472cba8747b82c18f6b1@o609353.ingest.sentry.io/5746970" />
+43-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:33:13-102
+44
+45        <activity android:name="com.W3Dev.w3devcalling.MainActivity" >
+45-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:35:9-41:20
+45-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:35:19-47
+46            <intent-filter>
+46-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:36:13-40:29
+47                <action android:name="android.intent.action.MAIN" />
+47-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:37:17-69
+47-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:37:25-66
+48
+49                <category android:name="android.intent.category.LAUNCHER" />
+49-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:39:17-77
+49-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:39:27-74
+50            </intent-filter>
+51        </activity>
+52
+53        <service
+53-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:43:9-47:43
+54            android:name="com.W3Dev.w3devcalling.background.DataChecker"
+54-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:44:13-51
+55            android:enabled="true"
+55-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:45:13-35
+56            android:exported="false"
+56-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:46:13-37
+57            android:stopWithTask="true" />
+57-->/Users/hangsai/corrected/app/src/main/AndroidManifest.xml:47:13-40
+58
+59        <activity
+59-->[pub.devrel:easypermissions:1.1.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/75f597e38f6064799faa442de4429b72/jetified-easypermissions-1.1.3/AndroidManifest.xml:12:9-16:66
+60            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+60-->[pub.devrel:easypermissions:1.1.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/75f597e38f6064799faa442de4429b72/jetified-easypermissions-1.1.3/AndroidManifest.xml:13:13-86
+61            android:exported="false"
+61-->[pub.devrel:easypermissions:1.1.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/75f597e38f6064799faa442de4429b72/jetified-easypermissions-1.1.3/AndroidManifest.xml:14:13-37
+62            android:label=""
+62-->[pub.devrel:easypermissions:1.1.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/75f597e38f6064799faa442de4429b72/jetified-easypermissions-1.1.3/AndroidManifest.xml:15:13-29
+63            android:theme="@style/EasyPermissions.Transparent" />
+63-->[pub.devrel:easypermissions:1.1.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/75f597e38f6064799faa442de4429b72/jetified-easypermissions-1.1.3/AndroidManifest.xml:16:13-63
+64        <activity
+64-->[gun0912.ted:tedpermission:2.2.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/ff52fd2b4599409f9f264c2018500967/jetified-tedpermission-2.2.3/AndroidManifest.xml:10:9-14:67
+65            android:name="com.gun0912.tedpermission.TedPermissionActivity"
+65-->[gun0912.ted:tedpermission:2.2.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/ff52fd2b4599409f9f264c2018500967/jetified-tedpermission-2.2.3/AndroidManifest.xml:11:13-75
+66            android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|screenLayout|fontScale|uiMode|orientation|screenSize|layoutDirection"
+66-->[gun0912.ted:tedpermission:2.2.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/ff52fd2b4599409f9f264c2018500967/jetified-tedpermission-2.2.3/AndroidManifest.xml:12:13-144
+67            android:screenOrientation="unspecified"
+67-->[gun0912.ted:tedpermission:2.2.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/ff52fd2b4599409f9f264c2018500967/jetified-tedpermission-2.2.3/AndroidManifest.xml:13:13-52
+68            android:theme="@style/Theme.Transparent.Permission" /> <!-- 'android:authorities' must be unique in the device, across all apps -->
+68-->[gun0912.ted:tedpermission:2.2.3] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/ff52fd2b4599409f9f264c2018500967/jetified-tedpermission-2.2.3/AndroidManifest.xml:14:13-64
+69        <provider
+69-->[io.sentry:sentry-android-core:4.3.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/d5e97be64c6b506a58cb9397170b8216/jetified-sentry-android-core-4.3.0/AndroidManifest.xml:16:9-19:40
+70            android:name="io.sentry.android.core.SentryInitProvider"
+70-->[io.sentry:sentry-android-core:4.3.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/d5e97be64c6b506a58cb9397170b8216/jetified-sentry-android-core-4.3.0/AndroidManifest.xml:17:13-69
+71            android:authorities="com.W3Dev.w3devcalling.SentryInitProvider"
+71-->[io.sentry:sentry-android-core:4.3.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/d5e97be64c6b506a58cb9397170b8216/jetified-sentry-android-core-4.3.0/AndroidManifest.xml:18:13-70
+72            android:exported="false" />
+72-->[io.sentry:sentry-android-core:4.3.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/d5e97be64c6b506a58cb9397170b8216/jetified-sentry-android-core-4.3.0/AndroidManifest.xml:19:13-37
+73        <provider
+73-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/07affe4d4ee75ee78ff2e4c9dedbaa4e/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+74            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+74-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/07affe4d4ee75ee78ff2e4c9dedbaa4e/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+75            android:authorities="com.W3Dev.w3devcalling.lifecycle-process"
+75-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/07affe4d4ee75ee78ff2e4c9dedbaa4e/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+76            android:exported="false"
+76-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/07affe4d4ee75ee78ff2e4c9dedbaa4e/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+77            android:multiprocess="true" />
+77-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/07affe4d4ee75ee78ff2e4c9dedbaa4e/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+78    </application>
+79
+80</manifest>
