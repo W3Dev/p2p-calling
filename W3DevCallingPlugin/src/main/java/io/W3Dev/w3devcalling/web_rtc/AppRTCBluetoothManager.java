@@ -8,7 +8,7 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-package com.W3Dev.w3devcalling.web_rtc;
+package io.W3Dev.w3devcalling.web_rtc;
 
 
 import android.bluetooth.BluetoothAdapter;
