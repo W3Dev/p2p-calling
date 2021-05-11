@@ -1,7 +1,6 @@
 package io.W3Dev.w3devcalling;
 
 import android.content.Context;
-import com.W3Dev.w3devcalling.web_rtc.AppRTCAudioManager;
 import org.webrtc.AudioSource;
 import org.webrtc.AudioTrack;
 import org.webrtc.MediaConstraints;
@@ -13,6 +12,8 @@ import org.webrtc.VideoSource;
 import org.webrtc.VideoTrack;
 
 import java.util.Set;
+
+import io.W3Dev.w3devcalling.web_rtc.AppRTCAudioManager;
 
 public class StartRendering {
 

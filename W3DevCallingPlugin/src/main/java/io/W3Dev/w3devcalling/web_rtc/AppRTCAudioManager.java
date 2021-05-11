@@ -8,7 +8,7 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-package com.W3Dev.w3devcalling.web_rtc;
+package io.W3Dev.w3devcalling.web_rtc;
 
 
 import android.annotation.SuppressLint;
@@ -23,13 +23,14 @@ import android.preference.PreferenceManager;
 import android.util.Log;
 
 //import com.myhexaville.androidwebrtc.R;
-import com.W3Dev.w3devcalling.R;
 import com.W3Dev.w3devcalling.util.AppRTCUtils;
 
 import org.webrtc.ThreadUtils;
 
 import java.util.HashSet;
 import java.util.Set;
+
+import io.W3Dev.w3devcalling.R;
 
 import static com.W3Dev.w3devcalling.util.AppRTCUtils.assertIsTrue;
 

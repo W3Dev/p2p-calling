@@ -8,7 +8,7 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-package com.W3Dev.w3devcalling.web_rtc;
+package io.W3Dev.w3devcalling.web_rtc;
 
 
 import android.content.Context;
@@ -54,7 +54,7 @@ public class AppRTCProximitySensor implements SensorEventListener {
     /**
      * Construction
      */
-    static AppRTCProximitySensor create(Context context, Runnable sensorStateListener) {
+    public static AppRTCProximitySensor create(Context context, Runnable sensorStateListener) {
         return new AppRTCProximitySensor(context, sensorStateListener);
     }
 
