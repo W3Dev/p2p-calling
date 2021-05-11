@@ -32,7 +32,6 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/Theme.W3DevCalling" >
         <activity android:name="com.W3Dev.w3devcalling.CompleteActivityPlugin" />
         <activity android:name="com.W3Dev.w3devcalling.CompleteFunctionalityActivity" />
