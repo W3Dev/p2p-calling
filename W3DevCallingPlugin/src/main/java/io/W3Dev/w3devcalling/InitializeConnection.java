@@ -29,16 +29,30 @@ import static org.webrtc.SessionDescription.Type.ANSWER;
 import static org.webrtc.SessionDescription.Type.OFFER;
 
 public class InitializeConnection {
+//    private PeerConnection peerConnection;
 
     private final String TAG = "pkpkpkpk";
     Socket socket;
-    SurfaceViewRenderer surface_view2;
-    private PeerConnection peerConnection;
     private boolean isInitiator;
     private boolean isChannelReady;
     private boolean isStarted;
 
-    public void connectToSignallingServer() {
+    public void initializePeerConnectionFactory(PeerConnectionFactory factory,
+                                                EglBase rootEglBase) {
+        PeerConnectionFactory.initializeAndroidGlobals(this, true, true, true);
+        factory = new PeerConnectionFactory(null);
+        factory.setVideoHwAccelerationOptions(rootEglBase.getEglBaseContext(), rootEglBase.getEglBaseContext());
+    }
+
+
+    public void initializePeerConnections(PeerConnectionFactory factory,
+                                          PeerConnection peerConnection,
+                                          SurfaceViewRenderer remoteSurfaceView) {
+        peerConnection = createPeerConnection(factory, remoteSurfaceView);
+    }
+
+
+    public void connectToSignallingServer(PeerConnection peerConnection) {
         try {
             socket = IO.socket("https://salty-sea-26559.herokuapp.com/");
             socket.on(EVENT_CONNECT, args -> {
@@ -70,7 +84,7 @@ public class InitializeConnection {
                     if (args[0] instanceof String) {
                         String message = (String) args[0];
                         if (message.equals("got user media")) {
-                            maybeStart();
+                            maybeStart(peerConnection);
                         }
                     } else {
                         JSONObject message = (JSONObject) args[0];
@@ -79,10 +93,10 @@ public class InitializeConnection {
                         if (message.getString("type").equals("offer")) {
                             Log.d(TAG, "connectToSignallingServer: received an offer " + isInitiator + " " + isStarted);
                             if (!isInitiator && !isStarted) {
-                                maybeStart();
+                                maybeStart(peerConnection);
                             }
                             peerConnection.setRemoteDescription(new SimpleSdpObserver(), new SessionDescription(OFFER, message.getString("sdp")));
-                            doAnswer();
+                            doAnswer(peerConnection);
                         } else if (message.getString("type").equals("answer") && isStarted) {
                             peerConnection.setRemoteDescription(new SimpleSdpObserver(), new SessionDescription(ANSWER, message.getString("sdp")));
                         } else if (message.getString("type").equals("candidate") && isStarted) {
@@ -107,7 +121,7 @@ public class InitializeConnection {
     }
 
 
-    private void doAnswer() {
+    private void doAnswer(PeerConnection peerConnection) {
         peerConnection.createAnswer(new SimpleSdpObserver() {
             @Override
             public void onCreateSuccess(SessionDescription sessionDescription) {
@@ -125,18 +139,18 @@ public class InitializeConnection {
     }
 
 
-    private void maybeStart() {
+    private void maybeStart(PeerConnection peerConnection) {
         Log.d(TAG, "maybeStart: " + isStarted + " " + isChannelReady);
         if (!isStarted && isChannelReady) {
             isStarted = true;
             if (isInitiator) {
-                doCall();
+                doCall(peerConnection);
             }
         }
     }
 
 
-    private void doCall() {
+    private void doCall(PeerConnection peerConnection) {
         MediaConstraints sdpMediaConstraints = new MediaConstraints();
 
         peerConnection.createOffer(new SimpleSdpObserver() {
@@ -162,19 +176,7 @@ public class InitializeConnection {
     }
 
 
-    public void initializePeerConnectionFactory(PeerConnectionFactory factory, EglBase rootEglBase) {
-        PeerConnectionFactory.initializeAndroidGlobals(this, true, true, true);
-        factory = new PeerConnectionFactory(null);
-        factory.setVideoHwAccelerationOptions(rootEglBase.getEglBaseContext(), rootEglBase.getEglBaseContext());
-    }
-
-
-    public void initializePeerConnections(PeerConnectionFactory factory) {
-        peerConnection = createPeerConnection(factory);
-    }
-
-
-    public PeerConnection createPeerConnection(PeerConnectionFactory factory) {
+    private PeerConnection createPeerConnection(PeerConnectionFactory factory, SurfaceViewRenderer remoteSurfaceView) {
         ArrayList<PeerConnection.IceServer> iceServers = new ArrayList<>();
         iceServers.add(new PeerConnection.IceServer("stun:stun.l.google.com:19302"));
 
@@ -230,7 +232,7 @@ public class InitializeConnection {
                 Log.d(TAG, "onAddStream: " + mediaStream.videoTracks.size());
                 VideoTrack remoteVideoTrack = mediaStream.videoTracks.get(0);
                 remoteVideoTrack.setEnabled(true);
-                remoteVideoTrack.addRenderer(new VideoRenderer(surface_view2));
+                remoteVideoTrack.addRenderer(new VideoRenderer(remoteSurfaceView));
 
 
             }
