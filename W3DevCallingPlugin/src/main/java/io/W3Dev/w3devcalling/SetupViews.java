@@ -14,7 +14,7 @@ public class SetupViews {
     Context context;
     private EglBase rootEglBase;
 
-    public void initializeSurfaceViews(SurfaceViewRenderer localVideoView, SurfaceViewRenderer remoteView) {
+   /* public void initializeSurfaceViews(SurfaceViewRenderer localVideoView, SurfaceViewRenderer remoteView) {
         rootEglBase = EglBase.create();
         localVideoView.init(rootEglBase.getEglBaseContext(), null);
         localVideoView.setEnableHardwareScaler(true);
@@ -23,7 +23,7 @@ public class SetupViews {
         remoteView.init(rootEglBase.getEglBaseContext(), null);
         remoteView.setEnableHardwareScaler(true);
         remoteView.setMirror(true);
-    }
+    }*/
 
 
     public VideoCapturer createVideoCapturer() {
@@ -37,7 +37,7 @@ public class SetupViews {
     }
 
 
-    public VideoCapturer createCameraCapturer(CameraEnumerator enumerator) {
+    private VideoCapturer createCameraCapturer(CameraEnumerator enumerator) {
         final String[] deviceNames = enumerator.getDeviceNames();
 
         for (String deviceName : deviceNames) {
@@ -64,7 +64,7 @@ public class SetupViews {
     }
 
 
-    public boolean useCamera2() {
+    private boolean useCamera2() {
         return Camera2Enumerator.isSupported(context);
     }
 
