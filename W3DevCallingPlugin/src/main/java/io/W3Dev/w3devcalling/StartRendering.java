@@ -46,7 +46,7 @@ public class StartRendering {
 
 //        audioConstraints = new MediaConstraints();
 //        AppRTCAudioManager audioManager = AppRTCAudioManager.create(context);
-        VideoCapturer videoCapturer = setupViews.createVideoCapturer();
+        VideoCapturer videoCapturer = setupViews.createVideoCapturer(context);
         VideoSource videoSource = factory.createVideoSource(videoCapturer);
         videoCapturer.startCapture(VIDEO_RESOLUTION_WIDTH, VIDEO_RESOLUTION_HEIGHT, FPS);
 

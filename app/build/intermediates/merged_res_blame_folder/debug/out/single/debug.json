@@ -4,10 +4,6 @@
         "source": "/Users/hangsai/corrected/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/hangsai/corrected/app/build/intermediates/res/merged/debug/layout_activity_complete_plugin.xml.flat",
-        "source": "/Users/hangsai/corrected/app/src/main/res/layout/activity_complete_plugin.xml"
-    },
-    {
         "merged": "/Users/hangsai/corrected/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "/Users/hangsai/corrected/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     },

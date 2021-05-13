@@ -11,7 +11,7 @@ import org.webrtc.VideoCapturer;
 
 public class SetupViews {
 
-    Context context;
+//    Context context;
 //    private EglBase rootEglBase;
 
    /* public void initializeSurfaceViews(SurfaceViewRenderer localVideoView, SurfaceViewRenderer remoteView) {
@@ -26,9 +26,9 @@ public class SetupViews {
     }*/
 
 
-    public VideoCapturer createVideoCapturer() {
+    public VideoCapturer createVideoCapturer(Context context) {
         VideoCapturer videoCapturer;
-        if (useCamera2()) {
+        if (useCamera2(context)) {
             videoCapturer = createCameraCapturer(new Camera2Enumerator(context));
         } else {
             videoCapturer = createCameraCapturer(new Camera1Enumerator(true));
@@ -64,7 +64,7 @@ public class SetupViews {
     }
 
 
-    private boolean useCamera2() {
+    private boolean useCamera2(Context context) {
         return Camera2Enumerator.isSupported(context);
     }
 
