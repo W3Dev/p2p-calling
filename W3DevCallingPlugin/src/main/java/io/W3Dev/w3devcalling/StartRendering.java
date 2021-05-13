@@ -36,6 +36,8 @@ public class StartRendering {
 
 
     public void createVideoTrackFromCamandShow(MediaConstraints audioConstraints,
+                                               VideoCapturer videoCapturer,
+                                               VideoSource videoSource,
                                                PeerConnectionFactory factory,
                                                AppRTCAudioManager audioManager,
                                                SetupViews setupViews,
@@ -46,8 +48,8 @@ public class StartRendering {
 
 //        audioConstraints = new MediaConstraints();
 //        AppRTCAudioManager audioManager = AppRTCAudioManager.create(context);
-        VideoCapturer videoCapturer = setupViews.createVideoCapturer(context);
-        VideoSource videoSource = factory.createVideoSource(videoCapturer);
+        //     VideoCapturer videoCapturer = setupViews.createVideoCapturer(context);
+        //  VideoSource videoSource = factory.createVideoSource(videoCapturer);
         videoCapturer.startCapture(VIDEO_RESOLUTION_WIDTH, VIDEO_RESOLUTION_HEIGHT, FPS);
 
         videoTrackFromCamera = factory.createVideoTrack(getTrackID(), videoSource);
