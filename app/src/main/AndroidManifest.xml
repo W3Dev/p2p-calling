@@ -24,7 +24,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.W3DevCalling">
-        <activity android:name=".CompleteActivityPlugin"></activity>
         <activity android:name=".CompleteFunctionalityActivity" />
         <activity android:name=".cameraRenderActivity" />
 
