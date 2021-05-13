@@ -81,6 +81,7 @@ public class CompleteFunctionalityActivity extends AppCompatActivity {
         surface_view1 = findViewById(R.id.surface_view1);
         surface_view2 = findViewById(R.id.surface_view2);
 
+
         up = findViewById(R.id.upty);
         dow = findViewById(R.id.dowty);
         //Implementing service------------------------

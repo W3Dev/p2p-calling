@@ -39,6 +39,7 @@ public class StartRendering {
                                                PeerConnectionFactory factory,
                                                AppRTCAudioManager audioManager,
                                                SetupViews setupViews,
+                                               Context context,
                                                int VIDEO_RESOLUTION_HEIGHT,
                                                int VIDEO_RESOLUTION_WIDTH,
                                                int FPS) {
