@@ -1904,7 +1904,6 @@ id line3
 id linear
 id listMode
 id list_item
-id localVideoView
 id masked
 id material_clock_display
 id material_clock_face
@@ -1991,7 +1990,6 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
-id remoteView
 id reverseSawtooth
 id right
 id rightToLeft
@@ -2178,7 +2176,6 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_camera_render
 layout activity_complete_functionality
-layout activity_complete_plugin
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item

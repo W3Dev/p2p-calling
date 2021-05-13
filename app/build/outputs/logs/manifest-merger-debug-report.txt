@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:2:1-50:12
+ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:2:1-49:12
+INJECTED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:2:1-49:12
+INJECTED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:2:1-49:12
+INJECTED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:2:1-49:12
 MERGED from [:W3DevCallingPlugin] /Users/hangsai/corrected/W3DevCallingPlugin/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-32:12
 MERGED from [com.google.android.material:material:1.3.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/0b040ae6fd7360855475a012c5af81a6/material-1.3.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/73327337a728e12c5c3cdecdb4b7e327/constraintlayout-2.0.4/AndroidManifest.xml:2:1-11:12
@@ -51,20 +51,20 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/hangsai/.gradle
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/1435e0b5216c3fd72a2d6579c29d3ee1/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/035487676af6db782633ffbdc1d98b21/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/3fd5b4b866d23b43b0e15439a0ee99e7/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:2:1-49:12
+INJECTED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:2:1-49:12
+INJECTED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:2:1-49:12
 	package
 		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:3:5-37
 		INJECTED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml
-		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:2:1-50:12
+		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:2:1-49:12
 		INJECTED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml
-		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:2:1-50:12
+		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:2:1-49:12
 		INJECTED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:2:11-69
@@ -139,7 +139,7 @@ MERGED from [:W3DevCallingPlugin] /Users/hangsai/corrected/W3DevCallingPlugin/bu
 	android:name
 		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:18:22-65
 application
-ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:20:5-48:19
+ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:20:5-47:19
 MERGED from [:W3DevCallingPlugin] /Users/hangsai/corrected/W3DevCallingPlugin/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:5-30:19
 MERGED from [:W3DevCallingPlugin] /Users/hangsai/corrected/W3DevCallingPlugin/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:5-30:19
 MERGED from [com.google.android.material:material:1.3.0] /Users/hangsai/.gradle/caches/transforms-2/files-2.1/0b040ae6fd7360855475a012c5af81a6/material-1.3.0/AndroidManifest.xml:22:5-20
@@ -172,50 +172,46 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/hangsai/.gradle/
 		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:21:9-35
 	android:theme
 		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:26:9-50
-activity#com.W3Dev.w3devcalling.CompleteActivityPlugin
-ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:27:9-69
-	android:name
-		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:27:19-57
 activity#com.W3Dev.w3devcalling.CompleteFunctionalityActivity
-ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:28:9-67
+ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:27:9-67
 	android:name
-		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:28:19-64
+		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:27:19-64
 activity#com.W3Dev.w3devcalling.cameraRenderActivity
-ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:29:9-58
+ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:28:9-58
 	android:name
-		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:29:19-55
+		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:28:19-55
 meta-data#io.sentry.dsn
-ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:31:9-33:105
+ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:30:9-32:105
 MERGED from [:W3DevCallingPlugin] /Users/hangsai/corrected/W3DevCallingPlugin/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:9-29:105
 MERGED from [:W3DevCallingPlugin] /Users/hangsai/corrected/W3DevCallingPlugin/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:9-29:105
 	android:value
-		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:33:13-102
+		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:32:13-102
 	android:name
-		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:32:13-41
+		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:31:13-41
 activity#com.W3Dev.w3devcalling.MainActivity
-ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:35:9-41:20
+ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:34:9-40:20
 	android:name
-		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:35:19-47
+		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:34:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:36:13-40:29
+ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:35:13-39:29
 action#android.intent.action.MAIN
-ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:37:17-69
+ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:36:17-69
 	android:name
-		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:37:25-66
+		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:36:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:39:17-77
+ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:38:17-77
 	android:name
-		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:39:27-74
+		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:38:27-74
 service#com.W3Dev.w3devcalling.background.DataChecker
-ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:43:9-47:43
+ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:42:9-46:43
 	android:enabled
-		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:45:13-35
+		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:44:13-35
 	android:exported
-		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:46:13-37
+		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:45:13-37
 	android:stopWithTask
-		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:47:13-40
+		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:46:13-40
 	android:name
-		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:44:13-51
+		ADDED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml:43:13-51
 uses-sdk
 INJECTED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/hangsai/corrected/app/src/main/AndroidManifest.xml
