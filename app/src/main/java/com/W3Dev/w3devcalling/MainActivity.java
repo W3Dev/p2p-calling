@@ -47,12 +47,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onPermissionGranted() {
                 Toast.makeText(getApplicationContext(), "Permission Granted", Toast.LENGTH_SHORT).show();
-
             }
 
             @Override
             public void onPermissionDenied(List<String> deniedPermissions) {
-                Toast.makeText(getApplicationContext(), "Permission Denied\n" + deniedPermissions.toString() + "\nPlease grant all the permissions to move forward", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Permission Denied\n"
+                                + deniedPermissions.toString() + "\nPlease grant all the permissions to move forward",
+                        Toast.LENGTH_SHORT).show();
                 RequestPermissions();
             }
         };

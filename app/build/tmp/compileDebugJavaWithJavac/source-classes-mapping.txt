@@ -1,11 +1,28 @@
+com/W3Dev/w3devcalling/background/DataChecker.java
+ com.W3Dev.w3devcalling.background.DataChecker
+ com.W3Dev.w3devcalling.background.DataChecker$1
+com/W3Dev/w3devcalling/BuildConfig.java
+ com.W3Dev.w3devcalling.BuildConfig
+com/W3Dev/w3devcalling/util/AppRTCUtils.java
+ com.W3Dev.w3devcalling.util.AppRTCUtils
+com/W3Dev/w3devcalling/cameraRenderActivity.java
+ com.W3Dev.w3devcalling.cameraRenderActivity
+com/W3Dev/w3devcalling/util/Constants.java
+ com.W3Dev.w3devcalling.util.Constants
+com/W3Dev/w3devcalling/SimpleSdpObserver.java
+ com.W3Dev.w3devcalling.SimpleSdpObserver
+com/W3Dev/w3devcalling/CompleteFunctionalityActivity.java
+ com.W3Dev.w3devcalling.CompleteFunctionalityActivity
+ com.W3Dev.w3devcalling.CompleteFunctionalityActivity$1
+ com.W3Dev.w3devcalling.CompleteFunctionalityActivity$2
+ com.W3Dev.w3devcalling.CompleteFunctionalityActivity$3
+ com.W3Dev.w3devcalling.CompleteFunctionalityActivity$4
 com/W3Dev/w3devcalling/web_rtc/AppRTCBluetoothManager.java
  com.W3Dev.w3devcalling.web_rtc.AppRTCBluetoothManager
  com.W3Dev.w3devcalling.web_rtc.AppRTCBluetoothManager$1
  com.W3Dev.w3devcalling.web_rtc.AppRTCBluetoothManager$BluetoothHeadsetBroadcastReceiver
  com.W3Dev.w3devcalling.web_rtc.AppRTCBluetoothManager$BluetoothServiceListener
  com.W3Dev.w3devcalling.web_rtc.AppRTCBluetoothManager$State
-com/W3Dev/w3devcalling/util/AppRTCUtils.java
- com.W3Dev.w3devcalling.util.AppRTCUtils
 com/W3Dev/w3devcalling/web_rtc/AppRTCAudioManager.java
  com.W3Dev.w3devcalling.web_rtc.AppRTCAudioManager
  com.W3Dev.w3devcalling.web_rtc.AppRTCAudioManager$1
@@ -15,8 +32,6 @@ com/W3Dev/w3devcalling/web_rtc/AppRTCAudioManager.java
  com.W3Dev.w3devcalling.web_rtc.AppRTCAudioManager$AudioManagerEvents
  com.W3Dev.w3devcalling.web_rtc.AppRTCAudioManager$AudioManagerState
  com.W3Dev.w3devcalling.web_rtc.AppRTCAudioManager$WiredHeadsetReceiver
-com/W3Dev/w3devcalling/cameraRenderActivity.java
- com.W3Dev.w3devcalling.cameraRenderActivity
 com/W3Dev/w3devcalling/util/AsyncHttpURLConnection.java
  com.W3Dev.w3devcalling.util.AsyncHttpURLConnection
  com.W3Dev.w3devcalling.util.AsyncHttpURLConnection$AsyncHttpEvents
@@ -27,18 +42,3 @@ com/W3Dev/w3devcalling/MainActivity.java
  com.W3Dev.w3devcalling.MainActivity$1
  com.W3Dev.w3devcalling.MainActivity$2
  com.W3Dev.w3devcalling.MainActivity$3
-com/W3Dev/w3devcalling/SimpleSdpObserver.java
- com.W3Dev.w3devcalling.SimpleSdpObserver
-com/W3Dev/w3devcalling/util/Constants.java
- com.W3Dev.w3devcalling.util.Constants
-com/W3Dev/w3devcalling/CompleteFunctionalityActivity.java
- com.W3Dev.w3devcalling.CompleteFunctionalityActivity
- com.W3Dev.w3devcalling.CompleteFunctionalityActivity$1
- com.W3Dev.w3devcalling.CompleteFunctionalityActivity$2
- com.W3Dev.w3devcalling.CompleteFunctionalityActivity$3
- com.W3Dev.w3devcalling.CompleteFunctionalityActivity$4
-com/W3Dev/w3devcalling/BuildConfig.java
- com.W3Dev.w3devcalling.BuildConfig
-com/W3Dev/w3devcalling/background/DataChecker.java
- com.W3Dev.w3devcalling.background.DataChecker
- com.W3Dev.w3devcalling.background.DataChecker$1

@@ -39,8 +39,8 @@ public class InitializeConnection {
 
     public void initializePeerConnectionFactory(PeerConnectionFactory factory,
                                                 EglBase rootEglBase) {
-        PeerConnectionFactory.initializeAndroidGlobals(this, true, true, true);
-        factory = new PeerConnectionFactory(null);
+//        PeerConnectionFactory.initializeAndroidGlobals(this, true, true, true);
+//        factory = new PeerConnectionFactory(null);
         factory.setVideoHwAccelerationOptions(rootEglBase.getEglBaseContext(), rootEglBase.getEglBaseContext());
     }
 

@@ -11,10 +11,10 @@ import org.webrtc.VideoCapturer;
 
 public class SetupViews {
 
-//    Context context;
-//    private EglBase rootEglBase;
+/*    Context context;
+    private EglBase rootEglBase;
 
-   /* public void initializeSurfaceViews(SurfaceViewRenderer localVideoView, SurfaceViewRenderer remoteView) {
+    public void initializeSurfaceViews(SurfaceViewRenderer localVideoView, SurfaceViewRenderer remoteView) {
         rootEglBase = EglBase.create();
         localVideoView.init(rootEglBase.getEglBaseContext(), null);
         localVideoView.setEnableHardwareScaler(true);
