@@ -1,12 +1,3 @@
-/*
- *  Copyright 2016 The WebRTC Project Authors. All rights reserved.
- *
- *  Use of this source code is governed by a BSD-style license
- *  that can be found in the LICENSE file in the root of the source
- *  tree. An additional intellectual property rights grant can be found
- *  in the file PATENTS.  All contributing project authors may
- *  be found in the AUTHORS file in the root of the source tree.
- */
 
 package io.W3Dev.w3devcalling.web_rtc;
 
@@ -28,12 +19,13 @@ import android.util.Log;
 
 //import com.myhexaville.androidwebrtc.app_rtc_sample.util.AppRTCUtils;
 
-import com.W3Dev.w3devcalling.util.AppRTCUtils;
 
 import org.webrtc.ThreadUtils;
 
 import java.util.List;
 import java.util.Set;
+
+import io.W3Dev.w3devcalling.util.AppRTCUtils;
 
 /**
  * AppRTCProximitySensor manages functions related to Bluetoth devices in the
