@@ -19,9 +19,10 @@ import android.hardware.SensorManager;
 import android.os.Build;
 import android.util.Log;
 
-import com.W3Dev.w3devcalling.util.AppRTCUtils;
 
 import org.webrtc.ThreadUtils;
+
+import io.W3Dev.w3devcalling.util.AppRTCUtils;
 
 /**
  * AppRTCProximitySensor manages functions related to the proximity sensor in
