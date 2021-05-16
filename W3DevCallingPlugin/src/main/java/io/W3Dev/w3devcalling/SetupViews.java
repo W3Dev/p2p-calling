@@ -11,21 +11,6 @@ import org.webrtc.VideoCapturer;
 
 public class SetupViews {
 
-/*    Context context;
-    private EglBase rootEglBase;
-
-    public void initializeSurfaceViews(SurfaceViewRenderer localVideoView, SurfaceViewRenderer remoteView) {
-        rootEglBase = EglBase.create();
-        localVideoView.init(rootEglBase.getEglBaseContext(), null);
-        localVideoView.setEnableHardwareScaler(true);
-        localVideoView.setMirror(true);
-
-        remoteView.init(rootEglBase.getEglBaseContext(), null);
-        remoteView.setEnableHardwareScaler(true);
-        remoteView.setMirror(true);
-    }*/
-
-
     public VideoCapturer createVideoCapturer(Context context) {
         VideoCapturer videoCapturer;
         if (useCamera2(context)) {
