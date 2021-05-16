@@ -34,18 +34,20 @@ PeerConnectionFactory factory,
 
     //TODO Alone can render camera capturrer activity
 
-    public void Render(PeerConnectionFactory factory,
-                       VideoCapturer videoCapturer,
-                       VideoTrack videoTrack,
-                       SurfaceViewRenderer surfaceViewRenderer,
-                       int VIDEO_RESOLUTION_HEIGHT,
-                       int VIDEO_RESOLUTION_WIDTH,
-                       int FPS) {
+    public VideoTrack RenderForLocalViewOnly(PeerConnectionFactory factory,
+                                             VideoCapturer videoCapturer,
+                                             VideoTrack videoTrack,
+                                             SurfaceViewRenderer surfaceViewRenderer,
+                                             int VIDEO_RESOLUTION_HEIGHT,
+                                             int VIDEO_RESOLUTION_WIDTH,
+                                             int FPS) {
         VideoSource videoSource = factory.createVideoSource(videoCapturer);
         videoCapturer.startCapture(VIDEO_RESOLUTION_WIDTH, VIDEO_RESOLUTION_HEIGHT, FPS);
         videoTrack = factory.createVideoTrack(getTrackID(), videoSource);
         videoTrack.setEnabled(true);
         videoTrack.addRenderer(new VideoRenderer(surfaceViewRenderer));
+        return videoTrack;
+
     }
 
     private String getTrackID() {
@@ -54,53 +56,37 @@ PeerConnectionFactory factory,
     }
 
 
-    AudioSource audioSource;
-    AudioTrack localAudioTrack;
-    VideoTrack videoTrackFromCamera;
 
-    public void createVideoTrackFromCamandShow(MediaConstraints audioConstraints,
+
+
+
+
+
+/*    AudioSource audioSource;
+    AudioTrack localAudioTrack;*/
+
+/*    public void createVideoTrackFromCamandShow(MediaConstraints audioConstraints,
                                                PeerConnectionFactory factory,
                                                AppRTCAudioManager audioManager
-    ) {
-/*                                               VideoCapturer videoCapturer,
-                                               SetupViews setupViews,
-                                               Context context,
-                                               int VIDEO_RESOLUTION_HEIGHT,
-                                               int VIDEO_RESOLUTION_WIDTH,
-                                               int FPS) {
-
+                                              ) {
+        AppRTCAudioManager audioManager;
         audioConstraints = new MediaConstraints();
-        AppRTCAudioManager audioManager = AppRTCAudioManager.create(context);
-             VideoCapturer videoCapturer = setupViews.createVideoCapturer(context);
-
-
-          VideoSource videoSource = factory.createVideoSource(videoCapturer);
-        videoCapturer.startCapture(VIDEO_RESOLUTION_WIDTH, VIDEO_RESOLUTION_HEIGHT, FPS);
-
-        videoTrackFromCamera = factory.createVideoTrack(getTrackID(), videoSource);
-        videoTrackFromCamera.setEnabled(true);
-
-
-        videoTrackFromCamera.addRenderer(new VideoRenderer(surface_view1));*/
+        audioManager = AppRTCAudioManager.create(context);
         audioManager.start(this::onAudioManagerDevicesChanged);
         audioSource = factory.createAudioSource(audioConstraints);
         localAudioTrack = factory.createAudioTrack("101", audioSource);
-    }
+    }*/
 
 
     public void startStreamingVideo(PeerConnection peerConnection,
-                                    PeerConnectionFactory factory) {
-        MediaStream mediaStream = factory.createLocalMediaStream("ARDAMS");
+                                    MediaStream mediaStream,
+                                    AudioTrack localAudioTrack,
+                                    PeerConnectionFactory factory,
+                                    VideoTrack videoTrackFromCamera) {
+        mediaStream = factory.createLocalMediaStream(getTrackID());
         mediaStream.addTrack(videoTrackFromCamera);
         mediaStream.addTrack(localAudioTrack);
         peerConnection.addStream(mediaStream);
-    }
-
-
-    private void onAudioManagerDevicesChanged(
-            final AppRTCAudioManager.AudioDevice device,
-            final Set<AppRTCAudioManager.AudioDevice> availableDevices) {
-        // TODO(henrika): add callback handler.
     }
 
 }
