@@ -43,7 +43,7 @@ public class PermissionGetter {
     @AfterPermissionGranted(RC_CALL)
     public void getperms(Context context, String[] permissionList) {
         if (EasyPermissions.hasPermissions(context, permissionList)) {
-            Toast.makeText(context, "Permission Granted", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Permission Already Granted", Toast.LENGTH_SHORT).show();
 
 
         } else {
